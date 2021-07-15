@@ -1,3 +1,3 @@
 # Photography
-Photography_Template <br>
+Template <br>
 Desenvolvido Usando SASS | JSquery
