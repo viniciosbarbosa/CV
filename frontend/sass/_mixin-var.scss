@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@function rem($pixel, $contexto : 16){
+    @return $pixel / $contexto + rem;
+  }
+  
+  @mixin tipo-18($size){
+    font-family: "Poppins";
+    @if $size == 18{
+      font-size: rem(18);
+      line-height: erm(1);
+    }
+  }
+
+  @mixin tipo-24($size){
+    font-family: "Poppins";
+    @if $size == 24{
+      font-size: rem(24);
+      line-height: 1;
+      font-weight: bold;
+    }
+  }
+  
+  @mixin tipo-30($size){
+    font-family: "Poppins";
+    @if $size == 30{
+      font-size: rem(30);
+    
+    }
+  }
+
+  @mixin tipo-36($size){
+    font-family: "Poppins";
+    @if $size == 38{
+      font-size: rem(38);
+      line-height: 1;
+      font-weight: bold;
+    }
+  }
+  
+  @mixin tipo-38($size){
+    font-family: "Poppins";
+    @if $size == 38{
+      font-size: rem(38);
+      line-height: 1;
+      font-weight: bold;
+    }
+  }
+  
+  @mixin tipo-56($size){
+    font-family: "Poppins";
+    @if $size == 56{
+      font-size: rem(56);
+      line-height: 1;
+      font-weight: bold;
+    }
+  }
+ 
+  
+
+  
+  @mixin box-shadow($shadow...){
+    -webkit-box-shadow:$shadow;
+    -moz-box-shadow:$shadow;
+    box-shadow: $shadow;
+  }
+  
+  @mixin linear-gradient($direction, $color-stops...) {
+    background: linear-gradient($direction, $color-stops);
+  }
+  
