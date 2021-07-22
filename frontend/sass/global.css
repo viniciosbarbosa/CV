@@ -179,6 +179,13 @@ body {
   }
 }
 
+@media screen and (min-width: 1400px) and (max-width: 1919px) {
+  .all {
+    margin-top: 3%;
+    padding: 7% 10%;
+  }
+}
+
 @media screen and (min-width: 760px) and (max-width: 1366px) {
   .all {
     margin-top: calc(50% - 625px);
@@ -194,7 +201,7 @@ body {
 
 @media screen and (max-width: 559px) {
   .all {
-    padding: 5%;
+    display: none;
   }
 }
 
@@ -208,6 +215,12 @@ body {
   height: auto;
 }
 
+@media screen and (min-width: 1400px) and (max-width: 1919px) {
+  .perfil {
+    height: 70vh;
+  }
+}
+
 @media screen and (min-width: 1920px) {
   .perfil {
     height: 80vh;
@@ -219,6 +232,13 @@ body {
   width: 180px;
   margin: 0 auto 30px;
   z-index: 1;
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1919px) {
+  .perfil .foto {
+    width: 300px;
+    margin-top: 3rem;
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -256,7 +276,7 @@ body {
 .perfil .prof {
   font-family: "Poppins";
   font-size: 1.125rem;
-  line-height: erm(1);
+  line-height: 1;
 }
 
 @media screen and (min-width: 1920px) {
@@ -295,6 +315,9 @@ body {
   opacity: 1;
   -webkit-transition: .3s;
   transition: .3s;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  color: #555555;
 }
 
 .socialWeb li a img {
@@ -313,21 +336,21 @@ body {
   text-align: center;
   font-family: "Poppins";
   font-size: 1.125rem;
-  line-height: erm(1);
+  line-height: 1;
   color: #fff;
   margin: 0 auto;
   margin-top: 2rem;
   text-transform: capitalize;
   cursor: pointer;
-  padding-top: 6px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  padding-top: 11px;
 }
 
 .btnDown:hover, .btnDown:focus {
   background: #fff;
   color: #fea621;
   text-decoration: none;
-  -webkit-transition: .3s;
-  transition: .3s;
   outline: none;
 }
 
@@ -366,12 +389,36 @@ body {
   color: #000000;
 }
 
+@media screen and (min-width: 1400px) and (max-width: 1919px) {
+  .nameA {
+    font-size: 4.5rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .nameA {
+    font-size: 5.5rem;
+  }
+}
+
 .profA {
   text-transform: capitalize;
   font-family: "Poppins";
   font-size: 1.125rem;
-  line-height: erm(1);
+  line-height: 1;
   color: #555555;
+}
+
+@media screen and (min-width: 1920px) {
+  .profA {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .profA {
+    font-size: 1.5rem;
+  }
 }
 
 .nameFirst {
@@ -382,5 +429,74 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: #fff;
+}
+
+.seletores {
+  background: #fff;
+  position: fixed;
+  right: 10px;
+  border-radius: 20px;
+}
+
+.caixa-s, .caixa-prev {
+  list-style-type: none;
+  padding: 0px;
+  border-radius: 20px;
+}
+
+.caixa-s li a, .caixa-prev li a {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  text-decoration: none;
+  color: #555555;
+  font-size: 20px;
+  padding: 15px;
+  margin: 0 auto;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.caixa-s li a:hover, .caixa-s li afocus, .caixa-prev li a:hover, .caixa-prev li afocus {
+  color: #fea621;
+}
+
+.prev-arrow {
+  background: #fff;
+  position: fixed;
+  bottom: 128px;
+  right: 10px;
+  border-radius: 20px;
+}
+
+.caixa-prev {
+  list-style-type: none;
+  padding: 0px;
+  border-radius: 17px;
+}
+
+.caixa-prev li a {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  text-decoration: none;
+  color: #555555;
+  font-size: 15px;
+  padding: 20px;
+  margin: 0 auto;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.caixa-prev li a:hover, .caixa-prev li afocus {
+  color: #fea621;
 }
 /*# sourceMappingURL=global.css.map */
