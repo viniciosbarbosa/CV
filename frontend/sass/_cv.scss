@@ -1,11 +1,16 @@
 body{
-    overflow: hidden;
+    overflow: auto;
     background-color: $beige;
 }
 
 .all{
     @include device(full){
         padding: 5% 10%;
+    }
+
+    @include device(hd){
+        margin-top:3%;
+        padding: 7% 10%;
     }
 
     @include device(large){
@@ -18,11 +23,14 @@ body{
     }
 
     @include device(mobile){
-        padding: 5%;
+        display: none;
     }
 }
 
 .perfil{
+    @include device(hd){
+        height: 70vh
+    }
     @include device(full){
         height: 80vh
     }
@@ -38,6 +46,11 @@ body{
         width: 180px;
         margin: 0 auto 30px;
         z-index: 1;
+        @include device(hd){
+            width: 300px;
+            margin-top: 3rem;
+        }
+
         @include device(full){
             width: 300px;
             margin-top: 3rem;
@@ -97,7 +110,8 @@ body{
             :hover,:focus{
                 opacity: 1;
                 transition: .3s;
-                
+                transform: scale(1.01);
+                color: $grey;
             }
             
             img{
@@ -123,12 +137,12 @@ body{
     margin-top: 2rem;
     text-transform: capitalize;
     cursor: pointer;
-    padding-top: 6px;
+    transition: .3s;
+    padding-top: 11px;
     &:hover,&:focus{
         background: $white;
         color: $yellow;
         text-decoration: none;
-        transition: .3s;
         outline: none;
     }
 
@@ -139,20 +153,8 @@ body{
     }
 }
 
-.vbcontent{
-    display: flex;
-    padding: 20px 0% 3% 0%;
-    overflow: auto;
-    height: auto;
-    margin-left: -30px;
-    background: $white;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-    border-top-right-radius:15px;
-    border-bottom-right-radius: 15px;
-    @include device(full){
-        height: 80vh
-    }
+.vbcontent ,.about-me ,.case ,.port,.contato{
+   @include section
 }
 
 .nameA,.profA{
@@ -164,16 +166,132 @@ body{
     text-transform: capitalize;
     @include tipo-56(56);
     color: $black;
+    @include device(hd){
+        font-size: 4.5rem;
+    }
+    @include device(full){
+        font-size: 5.5rem;
+    }
 }
 
 .profA{
     text-transform: capitalize;
     @include tipo-18(18);
     color: $grey;
+    @include device(full){
+        font-size: 1.3rem;
+    }
+    @include device(full){
+        font-size: 1.5rem;
+    }
 }
 
-.nameFirst{
+.nameFirst ,.about-me{
     display: flex;
     align-items: center;
     color: $white;
+    background-color: $white;
 }
+
+.seletores{
+background: $white;
+position: fixed;
+right: 10px;
+border-radius: 20px;
+}
+
+.caixa-s ,.caixa-prev {
+    list-style-type:none;
+    padding: 0px;
+    border-radius: 20px;
+    li{
+        a{
+            justify-content: center;
+            display: flex;
+            cursor: pointer;
+            text-decoration: none;
+            color: $grey;
+            font-size: 20px;
+            padding: 15px;
+            margin: 0 auto;
+            transition: .3s;
+            @include device ($full){
+                font-size: 30px;
+            }
+            &:hover,&focus{
+                color: $yellow;
+            }
+        }
+    }
+}
+
+.prev-arrow{
+background: $white;
+position: fixed;
+bottom: 128px;
+right: 10px;
+border-radius: 20px;
+}
+
+.caixa-prev {
+    list-style-type:none;
+    padding: 0px;
+    border-radius: 17px;
+    li{
+        a{
+            justify-content: center;
+            display: flex;
+            cursor: pointer;
+            text-decoration: none;
+            color: $grey;
+            font-size: 15px;
+            padding: 20px;
+            margin: 0 auto;
+            transition: .3s;
+            @include device ($full){
+                font-size: 30px;
+            }
+            &:hover,&focus{
+                color: $yellow;
+            }
+        }
+    }
+}
+
+.about-me,.case ,.port,.contato{ 
+
+    h1{
+        color: red;
+    }
+
+    p{
+        color: blue;
+    }
+}
+
+
+.js [data-target]{
+    opacity: 0;
+    visibility: hidden;
+    transform: translate3d(-50px, 0, 0);
+    position: absolute;
+    top: 0;
+}
+
+.js [data-click].active {
+    color:$yellow;
+}
+
+.js [data-target].active {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s;
+    position: relative;
+    top: auto;
+    transform: translate3d(0px, 0, 0);
+  }
+
+ .slider > .active{
+     position: relative;
+     opacity: 1;
+ }

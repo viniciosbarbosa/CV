@@ -11,7 +11,7 @@
     font-family: "Poppins";
     @if $size == 18{
       font-size: rem(18);
-      line-height: erm(1);
+      line-height: 1
     }
   }
 
@@ -60,7 +60,21 @@
   }
  
   
-
+  @mixin section{
+    display: flex;
+    padding: 20px 0% 3% 0%;
+    overflow: auto;
+    height: auto;
+    margin-left: -30px;
+    background: $white;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius:15px;
+    border-bottom-right-radius: 15px;
+    @include device(full){
+        height: 80vh
+    }
+  }
   
   @mixin box-shadow($shadow...){
     -webkit-box-shadow:$shadow;
