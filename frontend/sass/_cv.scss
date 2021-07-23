@@ -1,5 +1,5 @@
 body{
-    overflow: hidden;
+    overflow: auto;
     background-color: $beige;
 }
 
@@ -153,7 +153,7 @@ body{
     }
 }
 
-.vbcontent{
+.vbcontent ,.about-me ,.case ,.port,.contato{
    @include section
 }
 
@@ -186,10 +186,11 @@ body{
     }
 }
 
-.nameFirst{
+.nameFirst ,.about-me{
     display: flex;
     align-items: center;
     color: $white;
+    background-color: $white;
 }
 
 .seletores{
@@ -257,3 +258,40 @@ border-radius: 20px;
     }
 }
 
+.about-me,.case ,.port,.contato{ 
+
+    h1{
+        color: red;
+    }
+
+    p{
+        color: blue;
+    }
+}
+
+
+.js [data-target]{
+    opacity: 0;
+    visibility: hidden;
+    transform: translate3d(-50px, 0, 0);
+    position: absolute;
+    top: 0;
+}
+
+.js [data-click].active {
+    color:$yellow;
+}
+
+.js [data-target].active {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s;
+    position: relative;
+    top: auto;
+    transform: translate3d(0px, 0, 0);
+  }
+
+ .slider > .active{
+     position: relative;
+     opacity: 1;
+ }

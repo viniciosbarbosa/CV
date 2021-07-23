@@ -169,7 +169,7 @@
 }
 
 body {
-  overflow: hidden;
+  overflow: auto;
   background-color: #f9ecdb;
 }
 
@@ -354,7 +354,7 @@ body {
   outline: none;
 }
 
-.vbcontent {
+.vbcontent, .about-me, .case, .port, .contato {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -370,7 +370,7 @@ body {
 }
 
 @media screen and (min-width: 1920px) {
-  .vbcontent {
+  .vbcontent, .about-me, .case, .port, .contato {
     height: 80vh;
   }
 }
@@ -421,7 +421,7 @@ body {
   }
 }
 
-.nameFirst {
+.nameFirst, .about-me {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -429,6 +429,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: #fff;
+  background-color: #fff;
 }
 
 .seletores {
@@ -498,5 +499,42 @@ body {
 
 .caixa-prev li a:hover, .caixa-prev li afocus {
   color: #fea621;
+}
+
+.about-me h1, .case h1, .port h1, .contato h1 {
+  color: red;
+}
+
+.about-me p, .case p, .port p, .contato p {
+  color: blue;
+}
+
+.js [data-target] {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translate3d(-50px, 0, 0);
+          transform: translate3d(-50px, 0, 0);
+  position: absolute;
+  top: 0;
+}
+
+.js [data-click].active {
+  color: #fea621;
+}
+
+.js [data-target].active {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+  top: auto;
+  -webkit-transform: translate3d(0px, 0, 0);
+          transform: translate3d(0px, 0, 0);
+}
+
+.slider > .active {
+  position: relative;
+  opacity: 1;
 }
 /*# sourceMappingURL=global.css.map */
