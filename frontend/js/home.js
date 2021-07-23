@@ -2,9 +2,10 @@ $('[data-group]').each(function(){
     var $allTarget = $(this).find('[data-target]'),
     $allClick = $(this).find('[data-click]'),
     activeClass = 'active';
-    
+    $TargetActive = $allTarget.first().addClass(activeClass);
+
     $next = $(this).find('[data-next]'),
-    $prev = $(this).find('[data-next]');
+    $prev = $(this).find('[data-prev]');
     
     $allTarget.first().addClass(activeClass);
     $allClick.first().addClass(activeClass); 
@@ -14,7 +15,8 @@ $('[data-group]').each(function(){
         
         var id = $(this).data('click'),
         $target = $('[data-target="' + id + '"]');
-        
+        $TargetActive = $target;
+
         $allClick.removeClass(activeClass);
         $allTarget.removeClass(activeClass);  
         
@@ -26,17 +28,29 @@ $('[data-group]').each(function(){
     $next.click(function(e){
         e.preventDefault();
 
-        $target2 = $allTarget.next();
+        $newContent = $TargetActive.next();
+
+
+        if(!$newContent.hasClass( "grid-8" )){
+            $newContent =  $allTarget.first().addClass(activeClass);
+         }
         $allTarget.removeClass(activeClass);
-        $target2.addClass(activeClass);
-        /*
-        if($target2.lenght == 0){
-            $allTarget.removeClass(activeClass);  
-            $allTarget.first().addClass(activeClass);
-        }
-        */ 
+        $newContent.addClass(activeClass);
+        $TargetActive = $newContent;
+
+
     })
 
-    
+    $prev.click(function(e){
+        e.preventDefault();
+        
+        $newContent = $TargetActive.prev();
+        if(!$newContent.hasClass( "grid-8")){
+            $newContent =  $allTarget.last().addClass(activeClass);
+        }
+         $allTarget.removeClass(activeClass);
+         $newContent.addClass(activeClass);
+         $TargetActive = $newContent;
+    })
 });
 
