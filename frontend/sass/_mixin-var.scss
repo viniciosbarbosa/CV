@@ -6,6 +6,14 @@
 @function rem($pixel, $contexto : 16){
     @return $pixel / $contexto + rem;
   }
+
+  @mixin tipo-15($size){
+    font-family: "Poppins";
+    @if $size == 15{
+      font-size: rem(15);
+      line-height: 1.5;
+    }
+  }
   
   @mixin tipo-18($size){
     font-family: "Poppins";
@@ -71,6 +79,7 @@
     border-bottom-left-radius: 25px;
     border-top-right-radius:15px;
     border-bottom-right-radius: 15px;
+    align-items: initial;
     @include device(full){
         height: 80vh
     }
@@ -85,4 +94,41 @@
   @mixin linear-gradient($direction, $color-stops...) {
     background: linear-gradient($direction, $color-stops);
   }
+
+  @mixin paddingPadrao{
+    padding: 50px;
+  }
+
+  @mixin points{
+    position: absolute;
+        opacity: 0.5;
+        content: '';
+        height: 30px;
+        width: 50px;
+        background-image: -webkit-repeating-radial-gradient(center center, #fea621, #fea621 1px, transparent 0px, transparent 100%);
+        background-image: -moz-repeating-radial-gradient(center center, #fea621, #fea621 1px, transparent 0px, transparent 100%);
+        background-image: -ms-repeating-radial-gradient(center center, #fea621, #fea621 1px, transparent 0px, transparent 100%);
+        -webkit-background-size: 6px 6px;
+        -moz-background-size: 6px 6px;
+        background-size: 6px 6px;
+        z-index: 0;
+  }
   
+  @mixin scrollbar{
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+  
+    ::-webkit-scrollbar-track {
+      @include linear-gradient(180deg, $fumaca 47%,  $white 80%);
+    }
+  
+    ::-webkit-scrollbar-thumb {
+      background: $yellow;
+      border-radius:10px
+    }
+  
+    ::-webkit-scrollbar-thumb:hover {
+      background: $darkyellow;
+    }
+  }

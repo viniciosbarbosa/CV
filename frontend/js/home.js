@@ -54,3 +54,7 @@ $('[data-group]').each(function(){
     })
 });
 
+$('.whatapp').click(function (e) { 
+    e.preventDefault();
+    window.location.href = 'https://api.whatsapp.com/send?phone=5511959924104&text=Developer%20Front%20end';
+});
