@@ -83,6 +83,9 @@
     @include device(full){
         height: 80vh
     }
+    @include device(mobile){
+      border-radius: 0px;
+  }
   }
   
   @mixin box-shadow($shadow...){
@@ -99,7 +102,10 @@
     padding: 50px;
     @include device(table){
       padding: 30px 10px 30px 30px !important;
-  }
+    }
+    @include device(mobile){
+      padding: 15px;
+    }
   }
 
   @mixin points{
