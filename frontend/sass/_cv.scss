@@ -21,8 +21,8 @@ body{
     }
     
     @include device(large){
-        margin-top:calc(50% - 625px);
-        padding: 7% 10%;
+        margin-top:calc(50% - 578px);
+        padding: 0% 10%;
     }
     
     @include device(table){

@@ -63,7 +63,7 @@ $('.whatapp').click(function (e) {
 
 $('.github').click(function (e) { 
     e.preventDefault();
-    window.location.href = 'https://github.com/viniciosbarbosa';
+    window.open('https://github.com/viniciosbarbosa');
 });
 
 
