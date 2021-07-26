@@ -10,7 +10,7 @@ body{
     @include device(full){
         padding: 5% 10%;
     }
-
+    
     @include mach{
         padding: 4% 10% !important;
     }
@@ -292,11 +292,11 @@ body{
         height: 80vh !important;
         overflow-x: clip !important;
     }
-
+    
     @include device(full){
         height: 80vh
     }
-   
+    
 }
 
 
@@ -311,6 +311,7 @@ body{
     @include tipo-30(30);
     text-align: left;
     color:$black;
+    font-weight: bold;
     text-transform: capitalize;
     &::after{
         top: 10px;
@@ -352,7 +353,7 @@ body{
         span{
             color: $yellow;;
         }
-
+        
         .mail:hover{
             color: red;
         }
@@ -450,6 +451,108 @@ body{
     padding-top: 10px;
     word-break: keep-all;
     width: 90%;
+}
+
+.titleR{
+    @include tipo-30(30);
+    text-align: left;
+    color:$black;
+    text-transform: capitalize;
+    font-weight: bold;
+    &::after{
+        top: 10px;
+        @include points;
+        @include device(table){
+            left: 23%;
+        }
+        @include mac { 
+            left:16% !important;
+        }
+        
+        @include mach{
+            left:16% !important;
+        }
+        @include device(large){
+            left: 23%;
+        }
+        @include device(hd){
+            left: 20%
+        }
+        @include device(full){
+            left: 15%
+        }
+    }
+}
+
+
+.titleR2{
+    @include tipo-24(24);
+    margin-left: 7px;
+    text-align: left;
+    color:$black;
+    text-transform: capitalize;
+    font-weight: bold;
+    &::after{
+        top: 10px;
+        @include points;
+        @include device(table){
+            left: 23%;
+        }
+        @include mac { 
+            left:30% !important;
+        }
+        
+        @include mach{
+            left:26% !important;
+        }
+        @include device(large){
+            left: 28%;
+        }
+        @include device(hd){
+            left: 23%;
+        }
+        @include device(full){
+            left: 24%;
+        }
+    }
+}
+
+.year{
+    @include tipo-18(18);
+    color: $black;
+    display: block;
+    font-weight: bold;
+    text-align: right;
+}
+
+.nameU{
+    @include tipo-18(18);
+    color: $grey;
+    display: block;
+    text-align: right;
+}
+
+.listDiv{
+    @include listUper;
+    top: 60px;
+}
+
+.txt-uni{
+    display: block;
+    margin-left: 12%;
+    @include tipo-15(15);
+}
+
+.txt-unicon{
+    display: block;
+    margin-left: 12%;
+    @include tipo-15(15);
+    color:$grey;
+}
+
+.listDiv2{
+    @include listUper;
+    top: 0px;
 }
 
 @include scrollbar;

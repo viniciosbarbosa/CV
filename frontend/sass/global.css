@@ -570,6 +570,7 @@ body {
   font-size: 1.875rem;
   text-align: left;
   color: #000000;
+  font-weight: bold;
   text-transform: capitalize;
 }
 
@@ -782,6 +783,237 @@ body {
   padding-top: 10px;
   word-break: keep-all;
   width: 90%;
+}
+
+.titleR {
+  font-family: "Poppins";
+  font-size: 1.875rem;
+  text-align: left;
+  color: #000000;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.titleR::after {
+  top: 10px;
+  position: absolute;
+  opacity: 0.5;
+  content: '';
+  height: 30px;
+  width: 50px;
+  background-image: -webkit-repeating-radial-gradient(center center, #fea621, #fea621 1px, transparent 0px, transparent 100%);
+  background-image: -ms-repeating-radial-gradient(center center, #fea621, #fea621 1px, transparent 0px, transparent 100%);
+  background-size: 6px 6px;
+  z-index: 0;
+}
+
+@media screen and (min-width: 560px) and (max-width: 759px) {
+  .titleR::after {
+    left: 23%;
+  }
+}
+
+@media screen and (min-width: 1270px) and (max-width: 1290px) {
+  .titleR::after {
+    left: 16% !important;
+  }
+}
+
+@media screen and (min-height: 580px) and (max-height: 600px) {
+  .titleR::after {
+    left: 16% !important;
+  }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1366px) {
+  .titleR::after {
+    left: 23%;
+  }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1919px) {
+  .titleR::after {
+    left: 20%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .titleR::after {
+    left: 15%;
+  }
+}
+
+.titleR2 {
+  font-family: "Poppins";
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: bold;
+  margin-left: 7px;
+  text-align: left;
+  color: #000000;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.titleR2::after {
+  top: 10px;
+  position: absolute;
+  opacity: 0.5;
+  content: '';
+  height: 30px;
+  width: 50px;
+  background-image: -webkit-repeating-radial-gradient(center center, #fea621, #fea621 1px, transparent 0px, transparent 100%);
+  background-image: -ms-repeating-radial-gradient(center center, #fea621, #fea621 1px, transparent 0px, transparent 100%);
+  background-size: 6px 6px;
+  z-index: 0;
+}
+
+@media screen and (min-width: 560px) and (max-width: 759px) {
+  .titleR2::after {
+    left: 23%;
+  }
+}
+
+@media screen and (min-width: 1270px) and (max-width: 1290px) {
+  .titleR2::after {
+    left: 30% !important;
+  }
+}
+
+@media screen and (min-height: 580px) and (max-height: 600px) {
+  .titleR2::after {
+    left: 26% !important;
+  }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1366px) {
+  .titleR2::after {
+    left: 28%;
+  }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1919px) {
+  .titleR2::after {
+    left: 23%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .titleR2::after {
+    left: 24%;
+  }
+}
+
+.year {
+  font-family: "Poppins";
+  font-size: 1.125rem;
+  line-height: 1;
+  color: #000000;
+  display: block;
+  font-weight: bold;
+  text-align: right;
+}
+
+.nameU {
+  font-family: "Poppins";
+  font-size: 1.125rem;
+  line-height: 1;
+  color: #555555;
+  display: block;
+  text-align: right;
+}
+
+.listDiv {
+  position: absolute;
+  left: 37%;
+  bottom: 0;
+  width: 1px;
+  background-color: #fea621;
+  top: 60px;
+}
+
+.listDiv::before {
+  content: '';
+  display: block;
+  position: absolute;
+  margin-top: 4px;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  margin-left: -8px;
+  border-radius: 10px;
+  background-color: #df911d;
+  opacity: .25;
+  z-index: 0;
+}
+
+.listDiv::after {
+  content: '';
+  display: block;
+  position: absolute;
+  margin-top: 8px;
+  width: 9px;
+  height: 9px;
+  margin-left: -4px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 2px solid #fea621;
+  z-index: 1;
+}
+
+.txt-uni {
+  display: block;
+  margin-left: 12%;
+  font-family: "Poppins";
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+.txt-unicon {
+  display: block;
+  margin-left: 12%;
+  font-family: "Poppins";
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: #555555;
+}
+
+.listDiv2 {
+  position: absolute;
+  left: 37%;
+  bottom: 0;
+  width: 1px;
+  background-color: #fea621;
+  top: 0px;
+}
+
+.listDiv2::before {
+  content: '';
+  display: block;
+  position: absolute;
+  margin-top: 4px;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  margin-left: -8px;
+  border-radius: 10px;
+  background-color: #df911d;
+  opacity: .25;
+  z-index: 0;
+}
+
+.listDiv2::after {
+  content: '';
+  display: block;
+  position: absolute;
+  margin-top: 8px;
+  width: 9px;
+  height: 9px;
+  margin-left: -4px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 2px solid #fea621;
+  z-index: 1;
 }
 
 ::-webkit-scrollbar {

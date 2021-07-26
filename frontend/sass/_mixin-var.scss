@@ -114,6 +114,41 @@
         z-index: 0;
   }
   
+  @mixin listUper{
+    position: absolute;
+    left: 37%;
+    bottom: 0;
+    width: 1px;
+    background-color: $yellow;
+    &::before{
+        content: '';
+        display: block;
+        position: absolute;
+        margin-top: 4px;
+        width: 17px;
+        height: 17px;
+        position: absolute;
+        margin-left: -8px;
+        border-radius: 10px;
+        background-color: $darkyellow;
+        opacity: .25;
+        z-index: 0;
+    }&::after{
+        content: '';
+        display: block;
+        position: absolute;
+        margin-top: 8px;
+        width: 9px;
+        height: 9px;
+        margin-left: -4px;
+        background-color: #fff;
+        border-radius: 5px;
+        border: 2px solid $yellow;
+        z-index: 1;
+  }
+
+}
+
   @mixin scrollbar{
     ::-webkit-scrollbar {
       width: 10px;
