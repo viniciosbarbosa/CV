@@ -352,6 +352,11 @@ body {
     width: 80%;
   }
 }
+@media screen and (min-width: 1000px) and (max-width: 1030px) {
+  .btnDown {
+    width: 85%;
+  }
+}
 
 .vbcontent, .about-me, .case, .port, .contato {
   display: flex;

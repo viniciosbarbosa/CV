@@ -175,6 +175,10 @@ body{
     @include device(table){
         width: 80%;
     }
+  
+    @media screen and (min-width:1000px) and (max-width:1030px) {
+       width: 85%;
+    }
 }
 
 .vbcontent ,.about-me ,.case ,.port,.contato{
