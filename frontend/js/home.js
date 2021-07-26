@@ -34,6 +34,8 @@ $('[data-group]').each(function(){
         if(!$newContent.hasClass( "grid-8" )){
             $newContent =  $allTarget.first().addClass(activeClass);
          }
+
+     
         $allTarget.removeClass(activeClass);
         $newContent.addClass(activeClass);
         $TargetActive = $newContent;
@@ -54,3 +56,18 @@ $('[data-group]').each(function(){
     })
 });
 
+$('.whatapp').click(function (e) { 
+    e.preventDefault();
+    window.location.href = 'https://api.whatsapp.com/send?phone=5511959924104&text=Developer%20Front%20end';
+});
+
+$('.github').click(function (e) { 
+    e.preventDefault();
+    window.open('https://github.com/viniciosbarbosa');
+});
+
+
+$('.linkedin').click(function (e) { 
+    e.preventDefault();
+    window.location.href = 'https://www.linkedin.com/in/viniciosbarbosaa/';
+})
