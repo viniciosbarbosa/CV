@@ -97,6 +97,9 @@
 
   @mixin paddingPadrao{
     padding: 50px;
+    @include device(table){
+      padding: 30px 10px 30px 30px !important;
+  }
   }
 
   @mixin points{
