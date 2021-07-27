@@ -66,8 +66,42 @@ $('.github').click(function (e) {
     window.open('https://github.com/viniciosbarbosa');
 });
 
-
 $('.linkedin').click(function (e) { 
     e.preventDefault();
     window.location.href = 'https://www.linkedin.com/in/viniciosbarbosaa/';
 })
+
+$('#web').click(function (e) { 
+    e.preventDefault();
+    window.location.href = 'https://www.origamid.com/certificate/0a478d12/';
+});
+
+$('#inter').click(function (e) { 
+    e.preventDefault();
+    window.location.href = 'https://drive.conqueronline.com.br/Certificados/Intelig%C3%AAncia%20Emocional/1625628324123-9a876364-50c9-45d9-804e-dfa41b39e4a6.pdf';
+});
+
+$('#angu').click(function (e) { 
+    e.preventDefault();
+    window.location.href = 'https://www.cod3r.com.br/certificates/iywuvjtx0s';
+});
+
+$('#sass').click(function (e) { 
+    e.preventDefault();
+    window.location.href = 'https://www.origamid.com/certificate/1b95db14/';
+});
+
+$('#jq').click(function (e) { 
+    e.preventDefault();
+    window.location.href = 'https://www.origamid.com/certificate/370b269b/';
+});
+
+$('#prd').click(function (e) { 
+    e.preventDefault();
+    window.location.href = 'https://www.cod3r.com.br/certificates/nbzzqkqbnv';
+});
+
+$(selector).click(function (e) { 
+    e.preventDefault();
+    
+});

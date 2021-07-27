@@ -563,6 +563,7 @@ body {
   .js [data-target].active {
     margin-left: 0px;
     height: 100vh;
+    overflow-x: hidden;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -1102,6 +1103,11 @@ body {
   padding: 20px;
   vertical-align: middle;
 }
+@media screen and (max-width: 559px) {
+  .c-content {
+    padding: 15px;
+  }
+}
 .c-content .title {
   font-family: "Poppins";
   font-size: 1.125rem;
@@ -1138,12 +1144,6 @@ body {
 .c-content .link-c:hover {
   color: #fea621;
   text-decoration: none;
-}
-
-@media screen and (max-width: 559px) {
-  #port {
-    margin-bottom: 20px;
-  }
 }
 
 ::-webkit-scrollbar {

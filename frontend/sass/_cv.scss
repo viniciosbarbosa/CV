@@ -345,6 +345,7 @@ body{
     @include device(mobile){
         margin-left: 0px;
         height: 100vh;
+        overflow-x: hidden;
     }
 
   
@@ -690,6 +691,9 @@ body{
     width: 100%;
     padding: 20px;
     vertical-align: middle;
+    @include device(mobile){
+        padding: 15px;
+    }
     .title{
         @include tipo-18(18);
         display: block;
@@ -723,11 +727,5 @@ body{
     }
 }
 
-#port{
-    @include device (mobile){
-        margin-bottom: 20px;
-    }
-    
-}
 
 @include scrollbar;
