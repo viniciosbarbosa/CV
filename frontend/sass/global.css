@@ -1146,6 +1146,38 @@ body {
   text-decoration: none;
 }
 
+.menu-mobile {
+  top: 10px;
+  right: 20px;
+  color: #000000;
+  position: fixed;
+  display: none;
+}
+@media screen and (max-width: 559px) {
+  .menu-mobile {
+    display: initial;
+  }
+}
+.menu-mobile .btnm {
+  font-size: 30px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.mn-mobile {
+  display: none;
+  transform: translate3d(-50px, 0, 0);
+}
+@media screen and (max-width: 559px) {
+  .mn-mobile {
+    background: linear-gradient(180deg, #fe6d72 47%, #fea621 80%);
+    display: initial;
+    height: 100vh;
+    transform: translate3d(0px, 0, 0);
+    transition: 0.3s;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }

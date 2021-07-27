@@ -727,5 +727,34 @@ body{
     }
 }
 
+.menu-mobile{
+    top: 10px;
+    right: 20px;
+    color: $black;
+    position: fixed;
+    display: none;
+    @include device(mobile){
+        display: initial;
+    }
+
+    .btnm{
+        font-size: 30px;
+        color: $black;
+        text-decoration: none;
+    }
+}
+
+.mn-mobile{  
+    display: none;
+    transform: translate3d(-50px, 0, 0);
+    @include device(mobile){
+        @include linear-gradient (180deg, $pink 47%, $yellow 80%);
+        display: initial;
+        height: 100vh;
+        transform: translate3d(0px, 0, 0);
+        transition: .3s
+    }
+}
+
 
 @include scrollbar;

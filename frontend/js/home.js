@@ -31,7 +31,7 @@ $('[data-group]').each(function(){
         $newContent = $TargetActive.next();
 
 
-        if(!$newContent.hasClass( "grid-8" )){
+        if(!$newContent.hasClass("grid-8")){
             $newContent =  $allTarget.first().addClass(activeClass);
          }
 
@@ -47,7 +47,7 @@ $('[data-group]').each(function(){
         e.preventDefault();
         
         $newContent = $TargetActive.prev();
-        if(!$newContent.hasClass( "grid-8")){
+        if(!$newContent.hasClass("grid-8")){
             $newContent =  $allTarget.last().addClass(activeClass);
         }
          $allTarget.removeClass(activeClass);
@@ -55,6 +55,14 @@ $('[data-group]').each(function(){
          $TargetActive = $newContent;
     })
 });
+
+/*
+$('btnmenu').click(function (e) { 
+    e.preventDefault();
+    var showMenu = $("mn-mobile"),
+        activeMenu = $('active');
+        showMenu.addClass(activeMenu);
+});*/
 
 $('.whatapp').click(function (e) { 
     e.preventDefault();
@@ -99,9 +107,4 @@ $('#jq').click(function (e) {
 $('#prd').click(function (e) { 
     e.preventDefault();
     window.location.href = 'https://www.cod3r.com.br/certificates/nbzzqkqbnv';
-});
-
-$(selector).click(function (e) { 
-    e.preventDefault();
-    
 });
