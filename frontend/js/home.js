@@ -56,13 +56,15 @@ $('[data-group]').each(function(){
     })
 });
 
-/*
-$('btnmenu').click(function (e) { 
-    e.preventDefault();
-    var showMenu = $("mn-mobile"),
-        activeMenu = $('active');
-        showMenu.addClass(activeMenu);
-});*/
+
+
+var showMenu = $(".btnmenu"),
+    activeMenu = $('.active');
+
+$(showMenu).click(function(e){
+    $(showMenu).removeClass(activeMenu);
+    $(this).addClass(activeMenu);
+});
 
 $('.whatapp').click(function (e) { 
     e.preventDefault();

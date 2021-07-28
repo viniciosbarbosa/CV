@@ -17,7 +17,6 @@ body{
     }
     
     @include device(hd){
-        margin-top:3%;
         padding: 7% 10%;
     }
     
@@ -30,7 +29,7 @@ body{
         margin-top:calc(50% - 37%);
         padding: 5% 10%;
     }
-    
+
     @include device(mobile){
         display: initial;
     }
@@ -47,7 +46,7 @@ body{
         display: none;
     }
     @include device(hd){
-        height: 70vh
+        height: 80vh
     }
     @include device(full){
         height: 80vh
@@ -72,7 +71,7 @@ body{
         }
         @include device(hd){
             width: 300px;
-            margin-top: 3rem;
+            margin-top: 1rem;
         }
         
         @include device(full){
@@ -352,6 +351,10 @@ body{
     @include device(full){
         height: 80vh
     }
+
+    @include device (hd){
+        height: 80vh
+    }
     
 }
 
@@ -396,6 +399,15 @@ body{
     color:$yellow;
     text-transform: capitalize;
 }
+.txtPessoal{
+    @include tipo-15(15);
+    color: $grey;
+    @include device(mobile){
+        line-break: anywhere;
+        text-align: justify;
+        color: $grey;
+    }
+}
 
 .data-info{
     padding:0px;
@@ -406,10 +418,13 @@ body{
         color: $grey;
         text-align: left;
         margin-bottom: 8px;
+
+       
+
         span{
-            color: $yellow;;
+            color: $yellow;
         }
-        
+
         .mail:hover{
             color: red;
         }
@@ -429,8 +444,28 @@ body{
     padding: 0px 8px;
 }
 
+.m0{
+    @include device(mobile){
+        padding-left: 3%;
+        padding-right: 35px;
+        margin-left: 0px;
+    }
+}
+
+.m1{
+    @include device(mobile){
+        padding-left: 0%;
+        padding-right: 35px;
+        margin-left: 0px;
+    }
+}
+
 .titleS2{
     padding-left: 10px;
+    @include device(mobile){
+        padding-left: 0px;
+        margin-top: 10px;
+    }
     @include tipo-24(24);
     ::after{
         margin-top: 9px;
@@ -472,24 +507,10 @@ body{
     padding-bottom: 20px;
 }
 
-.listweb{
-    width: 100%;
-    list-style: none;
-    padding:0px;
-    margin-bottom: 0px;
-    padding-left: 10px;
-    padding-top: 10px;
-    li{
-        display: inline-block;
-        i{
-            font-size:30px;
-            color: $yellow;
-            transition: .3s;
-            &:hover{
-                transform: scale(1.1);
-            }
-        }
-    }
+.mt-5,.my-5 {
+   @include device(mobile){
+       margin-top: 0px !important;
+   }
 }
 
 .title_prin{
@@ -498,7 +519,20 @@ body{
     color: $black;
     font-weight: bold;
     padding-left: 10px;
-    padding-top: 10px;
+    padding-top: 15px;
+    @include device(mobile){
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+
+    i:first-child{
+        padding-left: 5px;
+    }
+
+    i{
+        color: $yellow;
+        font-size: 20px;
+    }
 }
 
 #title1{
@@ -516,6 +550,10 @@ body{
     padding-top: 10px;
     word-break: keep-all;
     width: 90%;
+    @include device(mobile){
+        padding-left: 0px;
+        text-align: justify;
+    }
 }
 
 .titleR{
@@ -557,6 +595,9 @@ body{
     color:$black;
     text-transform: capitalize;
     font-weight: bold;
+    @include device(mobile){
+        margin-left: 0px;
+    }
     &::after{
         top: 10px;
         @include points;
@@ -620,6 +661,9 @@ body{
     display: block;
     font-weight: bold;
     text-align: right;
+    @include device(mobile){
+        text-align: left;
+    }
 }
 
 .nameU{
@@ -627,17 +671,29 @@ body{
     color: $grey;
     display: block;
     text-align: right;
+    @include device(mobile){
+        text-align: left;
+        margin-bottom: 10px;
+    }
 }
 
 .listDiv{
     @include listUper;
     top: 60px;
+    @include device(mobile){
+        display: none;
+    }
 }
 
 .txt-uni{
     display: block;
     margin-left: 12%;
     @include tipo-15(15);
+    @include device(mobile){
+        margin-left: 0%;
+        margin-top: 5px;
+        font-weight: bold;
+    }
 }
 
 .txt-unicon{
@@ -645,11 +701,18 @@ body{
     margin-left: 12%;
     @include tipo-15(15);
     color:$grey;
+    @include device(mobile){
+        margin-left: 0%;
+        text-align: justify;
+    }
 }
 
 .listDiv2{
     @include listUper;
     top: 0px;
+    @include device(mobile){
+        display: none;
+    }
 }
 
 .certificados{
@@ -746,15 +809,17 @@ body{
 
 .mn-mobile{  
     display: none;
-    transform: translate3d(-50px, 0, 0);
-    @include device(mobile){
-        @include linear-gradient (180deg, $pink 47%, $yellow 80%);
-        display: initial;
-        height: 100vh;
-        transform: translate3d(0px, 0, 0);
-        transition: .3s
-    }
+    transform: translate3d(0px, -50px, 0);
+        @include device(mobile){
+            @include linear-gradient (180deg, $pink 47%, $yellow 80%);
+            display: initial;
+            height: 100vh;
+            transform: translate3d(0px, 0, 0);
+            transition: .3s
+        }
 }
+
+
 
 
 @include scrollbar;

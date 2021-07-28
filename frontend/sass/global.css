@@ -182,7 +182,6 @@ body {
 }
 @media screen and (min-width: 1400px) and (max-width: 1919px) {
   .all {
-    margin-top: 3%;
     padding: 7% 10%;
   }
 }
@@ -225,7 +224,7 @@ body {
 }
 @media screen and (min-width: 1400px) and (max-width: 1919px) {
   .perfil {
-    height: 70vh;
+    height: 80vh;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -252,7 +251,7 @@ body {
 @media screen and (min-width: 1400px) and (max-width: 1919px) {
   .perfil .foto {
     width: 300px;
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -571,6 +570,11 @@ body {
     height: 80vh;
   }
 }
+@media screen and (min-width: 1400px) and (max-width: 1919px) {
+  .js [data-target].active {
+    height: 80vh;
+  }
+}
 
 .about-me, .port, .case, .contato {
   padding: 50px;
@@ -641,6 +645,20 @@ body {
   text-transform: capitalize;
 }
 
+.txtPessoal {
+  font-family: "Poppins";
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: #555555;
+}
+@media screen and (max-width: 559px) {
+  .txtPessoal {
+    line-break: anywhere;
+    text-align: justify;
+    color: #555555;
+  }
+}
+
 .data-info {
   padding: 0px;
   margin: 0px;
@@ -674,12 +692,34 @@ body {
   padding: 0px 8px;
 }
 
+@media screen and (max-width: 559px) {
+  .m0 {
+    padding-left: 3%;
+    padding-right: 35px;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 559px) {
+  .m1 {
+    padding-left: 0%;
+    padding-right: 35px;
+    margin-left: 0px;
+  }
+}
+
 .titleS2 {
   padding-left: 10px;
   font-family: "Poppins";
   font-size: 1.5rem;
   line-height: 1;
   font-weight: bold;
+}
+@media screen and (max-width: 559px) {
+  .titleS2 {
+    padding-left: 0px;
+    margin-top: 10px;
+  }
 }
 .titleS2 ::after {
   margin-top: 9px;
@@ -745,24 +785,10 @@ body {
   padding-bottom: 20px;
 }
 
-.listweb {
-  width: 100%;
-  list-style: none;
-  padding: 0px;
-  margin-bottom: 0px;
-  padding-left: 10px;
-  padding-top: 10px;
-}
-.listweb li {
-  display: inline-block;
-}
-.listweb li i {
-  font-size: 30px;
-  color: #fea621;
-  transition: 0.3s;
-}
-.listweb li i:hover {
-  transform: scale(1.1);
+@media screen and (max-width: 559px) {
+  .mt-5, .my-5 {
+    margin-top: 0px !important;
+  }
 }
 
 .title_prin {
@@ -773,7 +799,20 @@ body {
   color: #000000;
   font-weight: bold;
   padding-left: 10px;
-  padding-top: 10px;
+  padding-top: 15px;
+}
+@media screen and (max-width: 559px) {
+  .title_prin {
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+}
+.title_prin i:first-child {
+  padding-left: 5px;
+}
+.title_prin i {
+  color: #fea621;
+  font-size: 20px;
 }
 
 @media screen and (min-width: 560px) and (max-width: 769px) {
@@ -793,6 +832,12 @@ body {
   padding-top: 10px;
   word-break: keep-all;
   width: 90%;
+}
+@media screen and (max-width: 559px) {
+  .title_txt {
+    padding-left: 0px;
+    text-align: justify;
+  }
 }
 
 .titleR {
@@ -856,6 +901,11 @@ body {
   color: #000000;
   text-transform: capitalize;
   font-weight: bold;
+}
+@media screen and (max-width: 559px) {
+  .titleR2 {
+    margin-left: 0px;
+  }
 }
 .titleR2::after {
   top: 10px;
@@ -963,6 +1013,11 @@ body {
   font-weight: bold;
   text-align: right;
 }
+@media screen and (max-width: 559px) {
+  .year {
+    text-align: left;
+  }
+}
 
 .nameU {
   font-family: "Poppins";
@@ -971,6 +1026,12 @@ body {
   color: #555555;
   display: block;
   text-align: right;
+}
+@media screen and (max-width: 559px) {
+  .nameU {
+    text-align: left;
+    margin-bottom: 10px;
+  }
 }
 
 .listDiv {
@@ -1008,6 +1069,11 @@ body {
   border: 2px solid #fea621;
   z-index: 1;
 }
+@media screen and (max-width: 559px) {
+  .listDiv {
+    display: none;
+  }
+}
 
 .txt-uni {
   display: block;
@@ -1015,6 +1081,13 @@ body {
   font-family: "Poppins";
   font-size: 0.9375rem;
   line-height: 1.5;
+}
+@media screen and (max-width: 559px) {
+  .txt-uni {
+    margin-left: 0%;
+    margin-top: 5px;
+    font-weight: bold;
+  }
 }
 
 .txt-unicon {
@@ -1024,6 +1097,12 @@ body {
   font-size: 0.9375rem;
   line-height: 1.5;
   color: #555555;
+}
+@media screen and (max-width: 559px) {
+  .txt-unicon {
+    margin-left: 0%;
+    text-align: justify;
+  }
 }
 
 .listDiv2 {
@@ -1060,6 +1139,11 @@ body {
   border-radius: 5px;
   border: 2px solid #fea621;
   z-index: 1;
+}
+@media screen and (max-width: 559px) {
+  .listDiv2 {
+    display: none;
+  }
 }
 
 .certificados {
@@ -1166,7 +1250,7 @@ body {
 
 .mn-mobile {
   display: none;
-  transform: translate3d(-50px, 0, 0);
+  transform: translate3d(0px, -50px, 0);
 }
 @media screen and (max-width: 559px) {
   .mn-mobile {
