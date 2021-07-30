@@ -415,26 +415,26 @@
       
       <div class="grid-8 contato" id="contato" data-target="contato">
         <div class="row">
-          <div class="col-12 pb-0 mb-0 txt-title-c">
+          <div class="col-12 pb-0 mb-1 txt-title-c">
             <h1>Contato</h1>
           </div>
           <div class='col-12  col-lg-4'>
             <div class="card">
-              <div class="img-c">
+              <div class="img-c2">
                 <i class="icon-c fa fa-map-marker" aria-hidden="true"></i>
               </div>
               <span>São Paulo</span>
             </div>
-
+            
             <div class="card pl-0 pr-0">
-              <div class="img-c">
+              <div class="img-c2">
                 <i class="icon-c fa fa-phone" aria-hidden="true"></i>
               </div>
               <span>(11)95992-4104</span>
             </div>
-
+            
             <div class="card">
-              <div class="img-c">
+              <div class="img-c2">
                 <i class="icon-c fa fa-map-marker" aria-hidden="true"></i>
               </div>
               <span>Free Lancer</span>
@@ -442,12 +442,40 @@
           </div>
           
           <div class="col-12 col-lg-8">
-            <iframe class="g-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.197721328612!2d-46.65867588524048!3d-23.56134126747615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1627666337768!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="row">
+              <iframe class="g-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.197721328612!2d-46.65867588524048!3d-23.56134126747615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1627666337768!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              
+              <span class="help-txt mb-2">Como posso <span>ajudar ?</span></span>
+
+              <div class="col-12 col-lg-7 inputs">
+                <div class="label-float" id="nome">
+                  <label>Nome</label>
+                  <input type="text" placeholder="nome" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                </div>
+                
+                <div class="label-float">
+                  <label>E-mail</label>
+                  <input type="text" placeholder="email" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                </div>
+                
+                <div class="label-float">
+                  <label>Telefone</label>
+                  <input type="text" placeholder="telefone" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"  data-mask-selectonFocus="true" id="telefone" data-mask="(00) 0000-0000" >
+                </div>
+              </div>
+              
+              <div class="col-12 col-lg-5 txt-msgs">
+                <div class="label-float" id="teste">
+                  <label id="msg2">Mensaguem</label>
+                  <textarea  autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"   type="text" id="caixa"></textarea>
+                </div>
+              </div>
+
+              <button href="#" class="btn-enviar">enviar</button>
+            </div>
           </div>
           
-          <div class="col-12">
-            <a href="#" onclick="">enviar</a>
-          </div>
+        
         </div>
       </div>
       

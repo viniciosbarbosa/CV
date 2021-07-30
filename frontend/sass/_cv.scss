@@ -937,6 +937,9 @@ body{
     @include device(mobile){
         max-width: 97%;
     }
+    @include device(table){
+        max-width: 90%;
+    }
     @include device(hd){
         height: auto;
     }
@@ -995,6 +998,7 @@ body{
     h1{
         @include tipo-30(30);
         color: $black;
+        font-weight: bold;
     }
 }
 
@@ -1003,34 +1007,35 @@ body{
     h1{
         @include tipo-30(30);
         color: $black;
+        font-weight: bold;
     }
 }
 
 .g-maps{
-   @include device (mobile){
-     max-width: 100%;
-     height:75%;
-   }
-
-   @include device (table){
-    width: 100%;
-    height:60%;
-   }
-
-   @include device(large){
-    width: 100%;
-    height:70%;
-   }
-
-   @include device(hd){
-    width: 120%;
-    height:70%;
-   }
-
-   @include device(full){
-    width:180%;
-    height: 90%;
-   }
+    @include device (mobile){
+        max-width: 100%;
+        height:75%;
+    }
+    
+    @include device (table){
+        width: 100%;
+        height:60%;
+    }
+    
+    @include device(large){
+        width: 100%;
+        height:50%;
+    }
+    
+    @include device(hd){
+        width: 110%;
+        height:50%;
+    }
+    
+    @include device(full){
+        width:150%;
+        height: 50%;
+    }
 }
 
 .card{
@@ -1046,12 +1051,125 @@ body{
     }
 }
 
-.img-c{
+.img-c2{
     color: $yellow;
-   margin-left: calc(50% - 7px);
-   font-size :31px;
-   margin-top:5px;
-   margin-bottom:5px;
+    margin-left: calc(50% - 7px);
+    font-size :31px;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+.help-txt{
+    margin-top:1rem;
+    display: block;
+    color: black;
+    @include tipo-24(24);
+    span{
+        color: $yellow;
+    }
+}
+
+
+.label-float textarea{
+    width: 100%;
+    height: 13.5rem;
+    @include device(full){
+        height: 14rem;
+    }
+}
+
+.label-float input ,textarea{
+    border:  3px solid $yellow;
+    background:$white;
+    outline: none;
+    font-size: 16px;
+    font-family: "Poppins";
+    transition: 0.2s;
+    -webkit-appearance:none;
+    border-radius: 0;
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+    color:$yellow;
+    padding-left: 10px;
+    margin-bottom: 3%;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-appearance:none;
+}
+
+.label-float input:focus textarea:focus{
+    border: none;
+    transition: 0.5s;
+    border-bottom: 2px solid $yellow;
+    color:$yellow;
+    padding-left: 0px;
+    margin-bottom: 1%;
+}
+
+.label-float input::placeholder {
+    color: transparent;
+}
+
+.label-float label  {
+    pointer-events: none;
+    position: initial;
+    top: 0;
+    left: 0;
+    margin-top: 10px;
+    color: $yellow;
+    font-family: "Poppins";
+    transition: 0.5s;
+}
+
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label{
+    font-size: 16px;
+    margin-top: 0;
+    color: $yellow;
+    font-family: "Poppins";
+    margin-top: -10px;
+    margin-left: 0px;
+    transition: 0.5s;
+}
+
+.inputs , .txt-msgs{
+    padding-left: 0px;
+    @include device(mobile){
+        padding-left: 0px;
+    }
+}
+
+.btn-enviar{
+    width: 30%;
+    background: $white;
+    border: 2px solid $yellow;
+    border-radius: 20px;
+    height: 40px;
+    color: $yellow;
+    text-decoration: none;
+    transition: .3s;
+    text-transform: capitalize;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    @include tipo-18(18);
+    &:hover{
+        background: $yellow;
+        color: $white;
+    }
+    
+    @include device (mobile){
+        width: 100%
+    }
+    
+    @include device (table){
+        width: 50%
+    }
+
+    @include device (large){
+        width: 50%
+    }
 }
 
 @include scrollbar;

@@ -157,3 +157,7 @@ function activeDiv(e , id) {
     $('.showDivcontent.active').removeClass('active');
     $('#' + id).addClass('active');
 }
+
+$(document).ready(function(){
+    $('#telefone').mask('(00) 0000-0000');
+})
