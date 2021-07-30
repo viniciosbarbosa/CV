@@ -83,6 +83,9 @@
     @include device(full){
         height: 80vh
     }
+    @include device(mobile){
+      border-radius: 0px;
+  }
   }
   
   @mixin box-shadow($shadow...){
@@ -97,6 +100,15 @@
 
   @mixin paddingPadrao{
     padding: 50px;
+    @include mac{
+      padding: 50px 20px 50px 50px !important;
+    }
+    @include device(table){
+      padding: 30px 10px 30px 30px !important;
+    }
+    @include device(mobile){
+      padding: 15px;
+    }
   }
 
   @mixin points{
@@ -148,6 +160,8 @@
   }
 
 }
+
+
 
   @mixin scrollbar{
     ::-webkit-scrollbar {
