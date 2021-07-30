@@ -100,6 +100,9 @@
 
   @mixin paddingPadrao{
     padding: 50px;
+    @include mac{
+      padding: 50px 20px 50px 50px !important;
+    }
     @include device(table){
       padding: 30px 10px 30px 30px !important;
     }
@@ -157,6 +160,8 @@
   }
 
 }
+
+
 
   @mixin scrollbar{
     ::-webkit-scrollbar {

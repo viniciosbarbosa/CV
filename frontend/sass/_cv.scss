@@ -9,7 +9,7 @@ body{
     }
     
     @include mac{
-        padding: 9% 10% !important;
+        padding: 6% 10% !important;
     }
     
     @include mach{
@@ -254,6 +254,7 @@ body{
 .vbcontent ,.about-me ,.case ,.port,.contato{
     @include section
 }
+
 
 .nameA,.profA{
     display: block;
@@ -886,7 +887,97 @@ body{
     }
 }
 
+.showDivcontent{
+    min-width: 100%;
+    opacity: 0;
+    top:0;
+    visibility: hidden;
+    transform: translate3d(0px, 50px, 0);
+    height: auto;
+    position: absolute;
+    margin-bottom: 20px;
+}
 
+.showDivcontent.active{
+    position: relative;
+    opacity: 1;
+    top: auto;
+    visibility: visible;
+    transition: .3s;
+    transform: translate3d(0px, 0px, 0);
+}
 
+.btnPort{
+    list-style: none;
+    padding: 0px;
+    li{
+        display: inline-block;
+        padding: 10px 35px 10px 0px ;
+        @include device (mobile){
+            padding: 10px 25px 10px 0px 
+        }
+        a{
+            text-decoration: none;
+            color: $grey;
+            @include tipo-15(15);
+            &:hover{
+                color :$yellow;
+            }
+        }
+    }
+}
+
+.img-fluid1{
+    max-width: 100%;
+    height: 130px;
+    border: 2px solid #D3D3D3;
+    border-radius: 2px;
+    @include device(mobile){
+        max-width: 97%;
+    }
+    @include device(hd){
+        height: auto;
+    }
+    @include device(full){
+        height: auto;
+    }
+}
+
+.imgPort{
+    margin-bottom: 3%;
+}
+
+.portall{
+    text-align: center;
+    color: $grey;
+    text-decoration: none;
+    margin-bottom: 20px;
+    @include device(mobile){
+        margin-left: calc(50% - 30px);
+    }
+    &:hover{
+        text-decoration: none;
+        color: $yellow;
+    }
+}
+
+#bike{
+    height:130px;
+    @include device (table){
+        margin-left: 0;
+        height: 76%;
+    }
+    @include device(mobile){
+        height:166px;
+    }
+    @include device(hd){
+        height: 200px;
+        margin-left: 0%;
+    }
+    @include device(full){
+        height: 250px;
+        margin-left: 0%;
+    }
+}
 
 @include scrollbar;

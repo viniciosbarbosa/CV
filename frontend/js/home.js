@@ -3,7 +3,7 @@ $('[data-group]').each(function(){
     $allClick = $(this).find('[data-click]'),
     activeClass = 'active';
     $TargetActive = $allTarget.first().addClass(activeClass);
-
+    
     $next = $(this).find('[data-next]'),
     $prev = $(this).find('[data-prev]');
     
@@ -16,33 +16,33 @@ $('[data-group]').each(function(){
         var id = $(this).data('click'),
         $target = $('[data-target="' + id + '"]');
         $TargetActive = $target;
-
+        
         $allClick.removeClass(activeClass);
         $allTarget.removeClass(activeClass);  
         
         $target.addClass(activeClass);
         $(this).addClass(activeClass);
     });
-
+    
     //
     $next.click(function(e){
         e.preventDefault();
-
+        
         $newContent = $TargetActive.next();
-
-
+        
+        
         if(!$newContent.hasClass("grid-8")){
             $newContent =  $allTarget.first().addClass(activeClass);
-         }
-
-     
+        }
+        
+        
         $allTarget.removeClass(activeClass);
         $newContent.addClass(activeClass);
         $TargetActive = $newContent;
-
-
+        
+        
     })
-
+    
     $prev.click(function(e){
         e.preventDefault();
         
@@ -50,16 +50,16 @@ $('[data-group]').each(function(){
         if(!$newContent.hasClass("grid-8")){
             $newContent =  $allTarget.last().addClass(activeClass);
         }
-         $allTarget.removeClass(activeClass);
-         $newContent.addClass(activeClass);
-         $TargetActive = $newContent;
+        $allTarget.removeClass(activeClass);
+        $newContent.addClass(activeClass);
+        $TargetActive = $newContent;
     })
 });
 
 
 
 var showMenu = $(".btnmenu"),
-    activeMenu = $('.active');
+activeMenu = $('.active');
 
 $(showMenu).click(function(e){
     $(showMenu).removeClass(activeMenu);
@@ -110,3 +110,50 @@ $('#prd').click(function (e) {
     e.preventDefault();
     window.location.href = 'https://www.cod3r.com.br/certificates/nbzzqkqbnv';
 });
+
+$('.portlogo').click(function (e) { 
+    e.preventDefault();
+    window.location.href = 'https://github.com/viniciosbarbosa/Logo';
+});
+
+$('.portnature').click(function (e) { 
+    e.preventDefault();
+    window.location.href = 'https://github.com/viniciosbarbosa/NatureJs';
+});
+
+$('.portorganic').click(function (e) { 
+    e.preventDefault();
+    window.location.href = 'https://github.com/viniciosbarbosa/Organic';
+});
+
+$('.portlescone').click(function (e) { 
+    e.preventDefault();
+    window.location.href = 'https://github.com/viniciosbarbosa/LeScone';
+});
+
+$('.porttravel').click(function (e) { 
+    e.preventDefault();
+    window.location.href = 'https://github.com/viniciosbarbosa/V.B-Travel';
+});
+
+$('.portbike').click(function (e) { 
+    e.preventDefault();
+    window.location.href = 'https://github.com/viniciosbarbosa/BikeCraft';
+});
+
+$('.portcrud').click(function (e) { 
+    e.preventDefault();
+    window.location.href = 'https://github.com/viniciosbarbosa/Crud-Angular';
+});
+
+$('.portcd').click(function (e) { 
+    e.preventDefault();
+    window.location.href = 'https://github.com/viniciosbarbosa/App-CoronaVirus';
+});
+
+
+function activeDiv(e , id) {
+    e.preventDefault();
+    $('.showDivcontent.active').removeClass('active');
+    $('#' + id).addClass('active');
+}
