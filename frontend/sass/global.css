@@ -1542,7 +1542,7 @@ body {
 
 @media screen and (max-width: 559px) {
   .btnPort li {
-    padding: 10px 25px 10px 0px;
+    padding: 10px 10px 10px 0px;
   }
 }
 
@@ -1560,9 +1560,12 @@ body {
 
 .img-fluid1 {
   max-width: 100%;
+  -webkit-transition: .3s;
+  transition: .3s;
   height: 130px;
   border: 2px solid #D3D3D3;
   border-radius: 2px;
+  margin-bottom: 3%;
 }
 
 @media screen and (max-width: 559px) {
@@ -1581,6 +1584,11 @@ body {
   .img-fluid1 {
     height: auto;
   }
+}
+
+.img-fluid1:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .imgPort {
@@ -1603,6 +1611,12 @@ body {
 .portall:hover {
   text-decoration: none;
   color: #fea621;
+}
+
+@media screen and (max-width: 559px) {
+  .portall:last-child {
+    margin-left: 0%;
+  }
 }
 
 #bike {
@@ -1634,6 +1648,77 @@ body {
     height: 250px;
     margin-left: 0%;
   }
+}
+
+.titlePort h1 {
+  font-family: "Poppins";
+  font-size: 1.875rem;
+  color: #000000;
+}
+
+.txt-title-c h1 {
+  font-family: "Poppins";
+  font-size: 1.875rem;
+  color: #000000;
+}
+
+@media screen and (max-width: 559px) {
+  .g-maps {
+    max-width: 100%;
+    height: 75%;
+  }
+}
+
+@media screen and (min-width: 560px) and (max-width: 769px) {
+  .g-maps {
+    width: 100%;
+    height: 60%;
+  }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1366px) {
+  .g-maps {
+    width: 100%;
+    height: 70%;
+  }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1919px) {
+  .g-maps {
+    width: 120%;
+    height: 70%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .g-maps {
+    width: 180%;
+    height: 90%;
+  }
+}
+
+.card {
+  background: #fcfcfc;
+  padding: 20%;
+  margin-bottom: 20px;
+}
+
+.card span {
+  color: #555555;
+  font-family: "Poppins";
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  text-align: center;
+  display: block;
+  font-weight: bold;
+}
+
+.img-c {
+  color: #fea621;
+  margin-left: calc(50% - 7px);
+  font-size: 31px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 ::-webkit-scrollbar {
