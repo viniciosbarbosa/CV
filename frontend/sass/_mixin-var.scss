@@ -181,3 +181,22 @@
       background: $darkyellow;
     }
   }
+
+  @mixin scrollbarM{
+    ::-webkit-scrollbar {
+      width: 0px;
+    }
+  
+    ::-webkit-scrollbar-track {
+      color: transparent;
+    }
+  
+    ::-webkit-scrollbar-thumb {
+      background: transparent;
+      border-radius:0px;
+    }
+  
+    ::-webkit-scrollbar-thumb:hover {
+      background: transparent;
+    }
+  }
