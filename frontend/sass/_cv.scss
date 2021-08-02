@@ -478,6 +478,9 @@ body{
     @include device(full){
         left: 15%
     }
+    @include device(full){
+        font-size: 2.5rem
+    }
 }
 .txtPessoal{
     @include tipo-15(15);
@@ -571,14 +574,13 @@ body{
             left: 23%;
         }
         @include device(hd){
-            left: 20%
+            left: 20%;
         }
         @media screen and (min-width:1360px) and(max-width:1370px){
-            left: 20%
+            left: 20%;
         }
         @include device(full){
-            left: 15%
-            
+            left: 23%;
         }
     }
 }
@@ -618,6 +620,7 @@ body{
     }
     @include device(full){
         font-size: 1.5rem;
+        margin-top: 5rem;
     }
     
     i:first-child{
@@ -627,12 +630,19 @@ body{
     i{
         color: $yellow;
         font-size: 20px;
+        @include device(full){
+            font-size: 28px;
+        }
     }
 }
 
 #title1{
     @include device(table){
         margin-top: 0px !important;
+    }
+
+    @include device(full){
+        margin-top: 5rem;
     }
 }
 
@@ -697,6 +707,9 @@ body{
     @include device(mobile){
         margin-left: 0px;
     }
+    @include device(full){
+        font-size: 3rem;
+    }
     &::after{
         top: 10px;
         @include points;
@@ -720,7 +733,7 @@ body{
             left: 23%;
         }
         @include device(full){
-            left: 20%;
+            left: 37%;
         }
     }
 }
@@ -734,6 +747,7 @@ body{
     font-weight: bold;
     @include device(full){
         font-size: 2.5rem;
+        margin-bottom: 30px;
     }
     &::after{
         top: 8px;
@@ -758,7 +772,7 @@ body{
             left: 17%;
         }
         @include device(full){
-            left: 15%;
+            left: 21%;
         }
     }
 }

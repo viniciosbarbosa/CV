@@ -742,6 +742,11 @@ body {
     left: 15%;
   }
 }
+@media screen and (min-width: 1920px) {
+  .txtDec {
+    font-size: 2.5rem;
+  }
+}
 
 .txtPessoal {
   font-family: "Poppins";
@@ -884,7 +889,7 @@ body {
 }
 @media screen and (min-width: 1920px) {
   .titleS2 ::after {
-    left: 15%;
+    left: 23%;
   }
 }
 
@@ -934,6 +939,7 @@ body {
 @media screen and (min-width: 1920px) {
   .title_prin {
     font-size: 1.5rem;
+    margin-top: 5rem;
   }
 }
 .title_prin i:first-child {
@@ -943,10 +949,20 @@ body {
   color: #fea621;
   font-size: 20px;
 }
+@media screen and (min-width: 1920px) {
+  .title_prin i {
+    font-size: 28px;
+  }
+}
 
 @media screen and (min-width: 560px) and (max-width: 769px) {
   #title1 {
     margin-top: 0px !important;
+  }
+}
+@media screen and (min-width: 1920px) {
+  #title1 {
+    margin-top: 5rem;
   }
 }
 
@@ -1045,6 +1061,11 @@ body {
     margin-left: 0px;
   }
 }
+@media screen and (min-width: 1920px) {
+  .titleR2 {
+    font-size: 3rem;
+  }
+}
 .titleR2::after {
   top: 10px;
   position: absolute;
@@ -1095,7 +1116,7 @@ body {
 }
 @media screen and (min-width: 1920px) {
   .titleR2::after {
-    left: 20%;
+    left: 37%;
   }
 }
 
@@ -1113,6 +1134,7 @@ body {
 @media screen and (min-width: 1920px) {
   .titleR3 {
     font-size: 2.5rem;
+    margin-bottom: 30px;
   }
 }
 .titleR3::after {
@@ -1165,7 +1187,7 @@ body {
 }
 @media screen and (min-width: 1920px) {
   .titleR3::after {
-    left: 15%;
+    left: 21%;
   }
 }
 
