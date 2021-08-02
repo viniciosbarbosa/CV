@@ -508,6 +508,13 @@ body {
   color: #fff;
   background-color: #fff;
 }
+@media screen and (max-width: 559px) {
+  .nameFirst {
+    display: initial;
+    align-items: initial;
+    top: calc(50% - 80px);
+  }
+}
 
 .seletores {
   background: #fff;
@@ -967,9 +974,7 @@ body {
 
 .titleR2 {
   font-family: "Poppins";
-  font-size: 1.5rem;
-  line-height: 1;
-  font-weight: bold;
+  font-size: 1.875rem;
   margin-left: 7px;
   text-align: left;
   color: #000000;
@@ -992,6 +997,11 @@ body {
   background-image: -ms-repeating-radial-gradient(center center, #fea621, #fea621 1px, transparent 0px, transparent 100%);
   background-size: 6px 6px;
   z-index: 0;
+}
+@media screen and (max-width: 559px) {
+  .titleR2::after {
+    display: none;
+  }
 }
 @media screen and (min-width: 560px) and (max-width: 769px) {
   .titleR2::after {
@@ -1375,7 +1385,7 @@ body {
 }
 
 .img-fluid1 {
-  max-width: 90%;
+  width: 90%;
   transition: 0.3s;
   height: 130px;
   border: 2px solid #D3D3D3;
@@ -1384,7 +1394,7 @@ body {
 }
 @media screen and (max-width: 559px) {
   .img-fluid1 {
-    max-width: 85%;
+    width: 100%;
   }
 }
 @media screen and (min-width: 560px) and (max-width: 769px) {
@@ -1403,6 +1413,38 @@ body {
   }
 }
 .img-fluid1:hover {
+  transform: scale(1.05);
+}
+
+.img-fluid2 {
+  max-width: 90%;
+  transition: 0.3s;
+  height: 130px;
+  border: 2px solid #D3D3D3;
+  border-radius: 2px;
+  margin-bottom: 3%;
+}
+@media screen and (max-width: 559px) {
+  .img-fluid2 {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 560px) and (max-width: 769px) {
+  .img-fluid2 {
+    max-width: 90%;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1919px) {
+  .img-fluid2 {
+    height: auto;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .img-fluid2 {
+    height: auto;
+  }
+}
+.img-fluid2:hover {
   transform: scale(1.05);
 }
 
@@ -1475,7 +1517,7 @@ body {
 
 @media screen and (max-width: 559px) {
   .g-maps {
-    max-width: 100%;
+    width: 100%;
     height: 75%;
   }
 }
@@ -1661,9 +1703,10 @@ body {
   font-size: 1.125rem;
   line-height: 1;
 }
-.btn-enviar:hover {
+.btn-enviar:hover, .btn-enviar:focus {
   background: #fea621;
   color: #fff;
+  outline: none;
 }
 @media screen and (max-width: 559px) {
   .btn-enviar {

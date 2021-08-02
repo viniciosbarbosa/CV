@@ -293,6 +293,11 @@ body{
     align-items: center;
     color: $white;
     background-color: $white;
+    @include device(mobile){
+        display: initial;
+        align-items: initial;
+        top: calc(50% - 80px);
+    }
 }
 
 .seletores{
@@ -657,7 +662,7 @@ body{
 
 
 .titleR2{
-    @include tipo-24(24);
+    @include tipo-30(30);
     margin-left: 7px;
     text-align: left;
     color:$black;
@@ -669,6 +674,9 @@ body{
     &::after{
         top: 10px;
         @include points;
+        @include device(mobile){
+            display: none;
+        }
         @include device(table){
             left: 23%;
         }
@@ -922,6 +930,30 @@ body{
 }
 
 .img-fluid1{
+    width: 90%;
+    transition: .3s;
+    height: 130px;
+    border: 2px solid #D3D3D3;
+    border-radius: 2px;
+    margin-bottom: 3%;
+    @include device(mobile){
+        width: 100%;
+    }
+    @include device(table){
+        max-width: 90%;
+    }
+    @include device(hd){
+        height: auto;
+    }
+    @include device(full){
+        height: auto;
+    }
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+
+.img-fluid2  {
     max-width: 90%;
     transition: .3s;
     height: 130px;
@@ -929,7 +961,7 @@ body{
     border-radius: 2px;
     margin-bottom: 3%;
     @include device(mobile){
-        max-width: 85%;
+       max-width: 100%;
     }
     @include device(table){
         max-width: 90%;
@@ -1007,7 +1039,7 @@ body{
 
 .g-maps{
     @include device (mobile){
-        max-width: 100%;
+        width: 100%;
         height:75%;
     }
     
@@ -1148,11 +1180,11 @@ body{
     margin-top: 20px;
     margin-bottom: 20px;
     @include tipo-18(18);
-    &:hover{
+    &:hover,&:focus{
         background: $yellow;
         color: $white;
-    }
-    
+        outline: none;
+    }    
     @include device (mobile){
         width: 100%;
         margin-bottom: 50px;
@@ -1161,7 +1193,7 @@ body{
     @include device (table){
         width: 50%;
     }
-
+    
     @include device (large){
         width: 50%;
     }
