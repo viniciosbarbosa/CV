@@ -512,7 +512,7 @@ body {
   .nameFirst {
     display: initial;
     align-items: initial;
-    top: calc(50% - 80px);
+    margin-top: 50%;
   }
 }
 
@@ -1062,6 +1062,11 @@ body {
     left: 23%;
   }
 }
+@media screen and (max-width: 559px) {
+  .titleR3::after {
+    display: none;
+  }
+}
 @media screen and (min-width: 1270px) and (max-width: 1290px) {
   .titleR3::after {
     left: 30% !important;
@@ -1385,7 +1390,7 @@ body {
 }
 
 .img-fluid1 {
-  width: 90%;
+  width: 100%;
   transition: 0.3s;
   height: 130px;
   border: 2px solid #D3D3D3;

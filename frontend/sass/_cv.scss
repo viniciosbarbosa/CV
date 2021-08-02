@@ -296,7 +296,7 @@ body{
     @include device(mobile){
         display: initial;
         align-items: initial;
-        top: calc(50% - 80px);
+        margin-top: 50%;
     }
 }
 
@@ -712,6 +712,9 @@ body{
         @include device(table){
             left: 23%;
         }
+        @include device(mobile) { 
+            display: none;
+        }
         @include mac { 
             left:30% !important;
         }
@@ -930,7 +933,7 @@ body{
 }
 
 .img-fluid1{
-    width: 90%;
+    width: 100%;
     transition: .3s;
     height: 130px;
     border: 2px solid #D3D3D3;
