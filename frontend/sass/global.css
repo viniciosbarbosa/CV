@@ -680,6 +680,11 @@ body {
   font-weight: bold;
   text-transform: capitalize;
 }
+@media screen and (min-width: 1920px) {
+  .titleS {
+    font-size: 3rem;
+  }
+}
 .titleS::after {
   top: 10px;
   position: absolute;
@@ -691,6 +696,12 @@ body {
   background-image: -ms-repeating-radial-gradient(center center, #fea621, #fea621 1px, transparent 0px, transparent 100%);
   background-size: 6px 6px;
   z-index: 0;
+}
+@media screen and (min-width: 1920px) {
+  .titleS::after {
+    height: 50px;
+    width: 100%;
+  }
 }
 @media screen and (min-width: 560px) and (max-width: 769px) {
   .titleS::after {
@@ -714,7 +725,8 @@ body {
 }
 @media screen and (min-width: 1920px) {
   .titleS::after {
-    left: 15%;
+    left: 20%;
+    top: 19px;
   }
 }
 
@@ -725,12 +737,22 @@ body {
   color: #fea621;
   text-transform: capitalize;
 }
+@media screen and (min-width: 1920px) {
+  .txtDec {
+    left: 15%;
+  }
+}
 
 .txtPessoal {
   font-family: "Poppins";
   font-size: 0.9375rem;
   line-height: 1.5;
   color: #555555;
+}
+@media screen and (min-width: 1920px) {
+  .txtPessoal {
+    font-size: 1.5rem;
+  }
 }
 @media screen and (max-width: 559px) {
   .txtPessoal {
@@ -752,6 +774,11 @@ body {
   color: #555555;
   text-align: left;
   margin-bottom: 8px;
+}
+@media screen and (min-width: 1920px) {
+  .data-info li {
+    font-size: 1.5rem;
+  }
 }
 .data-info li span {
   color: #fea621;
@@ -802,6 +829,11 @@ body {
     margin-top: 10px;
   }
 }
+@media screen and (min-width: 1920px) {
+  .titleS2 {
+    font-size: 3rem;
+  }
+}
 .titleS2 ::after {
   margin-top: 9px;
   position: absolute;
@@ -813,6 +845,12 @@ body {
   background-image: -ms-repeating-radial-gradient(center center, #fea621, #fea621 1px, transparent 0px, transparent 100%);
   background-size: 6px 6px;
   z-index: 0;
+}
+@media screen and (min-width: 1920px) {
+  .titleS2 ::after {
+    height: 50px;
+    width: 100%;
+  }
 }
 @media screen and (min-width: 560px) and (max-width: 769px) {
   .titleS2 ::after {
@@ -859,6 +897,11 @@ body {
   color: #fea621;
   text-transform: capitalize;
 }
+@media screen and (min-width: 1920px) {
+  .txtDec2 {
+    font-size: 3rem;
+  }
+}
 
 .contet-6 {
   padding: 0px 8px;
@@ -886,6 +929,11 @@ body {
   .title_prin {
     padding-left: 0px;
     padding-top: 0px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .title_prin {
+    font-size: 1.5rem;
   }
 }
 .title_prin i:first-child {
@@ -920,6 +968,11 @@ body {
     text-align: justify;
   }
 }
+@media screen and (min-width: 1920px) {
+  .title_txt {
+    font-size: 1.5rem;
+  }
+}
 
 .titleR {
   font-family: "Poppins";
@@ -940,6 +993,12 @@ body {
   background-image: -ms-repeating-radial-gradient(center center, #fea621, #fea621 1px, transparent 0px, transparent 100%);
   background-size: 6px 6px;
   z-index: 0;
+}
+@media screen and (min-width: 1920px) {
+  .titleR::after {
+    height: 50px;
+    width: 100%;
+  }
 }
 @media screen and (min-width: 560px) and (max-width: 769px) {
   .titleR::after {
@@ -998,6 +1057,12 @@ body {
   background-size: 6px 6px;
   z-index: 0;
 }
+@media screen and (min-width: 1920px) {
+  .titleR2::after {
+    height: 50px;
+    width: 100%;
+  }
+}
 @media screen and (max-width: 559px) {
   .titleR2::after {
     display: none;
@@ -1045,6 +1110,11 @@ body {
   text-transform: capitalize;
   font-weight: bold;
 }
+@media screen and (min-width: 1920px) {
+  .titleR3 {
+    font-size: 2.5rem;
+  }
+}
 .titleR3::after {
   top: 8px;
   position: absolute;
@@ -1056,6 +1126,12 @@ body {
   background-image: -ms-repeating-radial-gradient(center center, #fea621, #fea621 1px, transparent 0px, transparent 100%);
   background-size: 6px 6px;
   z-index: 0;
+}
+@media screen and (min-width: 1920px) {
+  .titleR3::after {
+    height: 50px;
+    width: 100%;
+  }
 }
 @media screen and (min-width: 560px) and (max-width: 769px) {
   .titleR3::after {
@@ -1107,6 +1183,11 @@ body {
     text-align: left;
   }
 }
+@media screen and (min-width: 1920px) {
+  .year {
+    font-size: 1.5rem;
+  }
+}
 
 .nameU {
   font-family: "Poppins";
@@ -1120,6 +1201,11 @@ body {
   .nameU {
     text-align: left;
     margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .nameU {
+    font-size: 1.5rem;
   }
 }
 
@@ -1178,6 +1264,11 @@ body {
     font-weight: bold;
   }
 }
+@media screen and (min-width: 1920px) {
+  .txt-uni {
+    font-size: 1.5rem;
+  }
+}
 
 .txt-unicon {
   display: block;
@@ -1191,6 +1282,11 @@ body {
   .txt-unicon {
     margin-left: 0%;
     text-align: justify;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .txt-unicon {
+    font-size: 1.5rem;
   }
 }
 
@@ -1292,6 +1388,11 @@ body {
   text-align: left;
   word-break: initial;
 }
+@media screen and (min-width: 1920px) {
+  .c-content .title {
+    font-size: 1.5rem;
+  }
+}
 .c-content .dt-title {
   font-family: "Poppins";
   font-size: 0.9375rem;
@@ -1303,6 +1404,11 @@ body {
 @media screen and (max-width: 559px) {
   .c-content .dt-title {
     display: block;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .c-content .dt-title {
+    font-size: 1.5rem;
   }
 }
 .c-content .link-c {
@@ -1317,6 +1423,11 @@ body {
 .c-content .link-c:hover {
   color: #fea621;
   text-decoration: none;
+}
+@media screen and (min-width: 1920px) {
+  .c-content .link-c {
+    font-size: 1.5rem;
+  }
 }
 
 .menu-mobile {
@@ -1378,12 +1489,22 @@ body {
     padding: 10px 10px 10px 0px;
   }
 }
+@media screen and (min-width: 1920px) {
+  .btnPort li {
+    font-size: 1.5rem;
+  }
+}
 .btnPort li a {
   text-decoration: none;
   color: #555555;
   font-family: "Poppins";
   font-size: 0.9375rem;
   line-height: 1.5;
+}
+@media screen and (min-width: 1920px) {
+  .btnPort li a {
+    font-size: 1.5rem;
+  }
 }
 .btnPort li a:hover {
   color: #fea621;
@@ -1520,12 +1641,22 @@ body {
   color: #000000;
   font-weight: bold;
 }
+@media screen and (min-width: 1920px) {
+  .titlePort h1 {
+    font-size: 2.5rem;
+  }
+}
 
 .txt-title-c h1 {
   font-family: "Poppins";
   font-size: 1.875rem;
   color: #000000;
   font-weight: bold;
+}
+@media screen and (min-width: 1920px) {
+  .txt-title-c h1 {
+    font-size: 3rem;
+  }
 }
 
 @media screen and (max-width: 559px) {

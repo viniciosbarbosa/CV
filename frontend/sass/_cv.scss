@@ -445,6 +445,9 @@ body{
     color:$black;
     font-weight: bold;
     text-transform: capitalize;
+    @include device(full){
+        font-size: 3rem;
+    }
     &::after{
         top: 10px;
         @include points;
@@ -461,7 +464,8 @@ body{
             left: 20%
         }
         @include device(full){
-            left: 15%
+            left: 20%;
+            top: 19px;
         }
     }
 }
@@ -471,10 +475,16 @@ body{
     text-align: left;
     color:$yellow;
     text-transform: capitalize;
+    @include device(full){
+        left: 15%
+    }
 }
 .txtPessoal{
     @include tipo-15(15);
     color: $grey;
+    @include device(full){
+        font-size: 1.5rem;
+    }
     @include device(mobile){
         line-break: anywhere;
         text-align: justify;
@@ -491,7 +501,9 @@ body{
         color: $grey;
         text-align: left;
         margin-bottom: 8px;
-        
+        @include device(full){
+            font-size: 1.5rem;
+        }
         
         
         span{
@@ -539,6 +551,9 @@ body{
         padding-left: 0px;
         margin-top: 10px;
     }
+    @include device(full){
+        font-size: 3rem;
+    }
     @include tipo-24(24);
     ::after{
         margin-top: 9px;
@@ -563,6 +578,7 @@ body{
         }
         @include device(full){
             left: 15%
+            
         }
     }
 }
@@ -572,6 +588,9 @@ body{
     text-align: left;
     color:$yellow;
     text-transform: capitalize;
+    @include device(full){
+        font-size: 3rem;
+    }
 }
 
 .contet-6{
@@ -596,6 +615,9 @@ body{
     @include device(mobile){
         padding-left: 0px;
         padding-top: 0px;
+    }
+    @include device(full){
+        font-size: 1.5rem;
     }
     
     i:first-child{
@@ -626,6 +648,10 @@ body{
     @include device(mobile){
         padding-left: 0px;
         text-align: justify;
+    }
+
+    @include device(full){
+        font-size: 1.5rem;
     }
 }
 
@@ -706,6 +732,9 @@ body{
     color:$black;
     text-transform: capitalize;
     font-weight: bold;
+    @include device(full){
+        font-size: 2.5rem;
+    }
     &::after{
         top: 8px;
         @include points;
@@ -743,6 +772,9 @@ body{
     @include device(mobile){
         text-align: left;
     }
+    @include device(full){
+        font-size: 1.5rem;
+    }
 }
 
 .nameU{
@@ -753,6 +785,9 @@ body{
     @include device(mobile){
         text-align: left;
         margin-bottom: 10px;
+    }
+    @include device(full){
+        font-size: 1.5rem;
     }
 }
 
@@ -773,6 +808,9 @@ body{
         margin-top: 5px;
         font-weight: bold;
     }
+    @include device(full){
+        font-size: 1.5rem;
+    }
 }
 
 .txt-unicon{
@@ -783,6 +821,9 @@ body{
     @include device(mobile){
         margin-left: 0%;
         text-align: justify;
+    }
+    @include device(full){
+        font-size: 1.5rem;
     }
 }
 
@@ -844,6 +885,9 @@ body{
         text-transform: capitalize;
         text-align: left;
         word-break: initial;
+        @include device(full){
+            font-size: 1.5rem
+        }
     }
     
     .dt-title{
@@ -853,6 +897,9 @@ body{
         text-align: left;
         @include device(mobile){
             display: block
+        }
+        @include device(full){
+            font-size: 1.5rem
         }
     }
     
@@ -865,6 +912,9 @@ body{
         &:hover{
             color: $yellow;
             text-decoration: none
+        }
+        @include device(full){
+            font-size: 1.5rem
         }
     }
 }
@@ -921,10 +971,16 @@ body{
         @include device (mobile){
             padding: 10px 10px 10px 0px 
         }
+        @include device(full){
+            font-size: 1.5rem
+        }
         a{
             text-decoration: none;
             color: $grey;
             @include tipo-15(15);
+            @include device(full){
+                font-size: 1.5rem;
+            }
             &:hover{
                 color :$yellow;
             }
@@ -1034,6 +1090,9 @@ body{
         @include tipo-30(30);
         color: $black;
         font-weight: bold;
+        @include device(full){
+            font-size: 2.5rem;
+        }
     }
 }
 
@@ -1043,6 +1102,9 @@ body{
         @include tipo-30(30);
         color: $black;
         font-weight: bold;
+        @include device(full){
+            font-size: 3rem;
+        }
     }
 }
 
