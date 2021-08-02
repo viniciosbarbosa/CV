@@ -700,7 +700,7 @@ body {
 @media screen and (min-width: 1920px) {
   .titleS::after {
     height: 50px;
-    width: 100%;
+    width: 100px;
   }
 }
 @media screen and (min-width: 560px) and (max-width: 769px) {
@@ -849,7 +849,7 @@ body {
 @media screen and (min-width: 1920px) {
   .titleS2 ::after {
     height: 50px;
-    width: 100%;
+    width: 100px;
   }
 }
 @media screen and (min-width: 560px) and (max-width: 769px) {
@@ -997,7 +997,7 @@ body {
 @media screen and (min-width: 1920px) {
   .titleR::after {
     height: 50px;
-    width: 100%;
+    width: 100px;
   }
 }
 @media screen and (min-width: 560px) and (max-width: 769px) {
@@ -1060,7 +1060,7 @@ body {
 @media screen and (min-width: 1920px) {
   .titleR2::after {
     height: 50px;
-    width: 100%;
+    width: 100px;
   }
 }
 @media screen and (max-width: 559px) {
@@ -1130,7 +1130,7 @@ body {
 @media screen and (min-width: 1920px) {
   .titleR3::after {
     height: 50px;
-    width: 100%;
+    width: 100px;
   }
 }
 @media screen and (min-width: 560px) and (max-width: 769px) {
