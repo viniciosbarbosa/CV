@@ -620,7 +620,6 @@ body{
     }
     @include device(full){
         font-size: 1.5rem;
-        margin-top: 5rem;
     }
     
     i:first-child{
@@ -642,7 +641,7 @@ body{
     }
 
     @include device(full){
-        margin-top: 5rem;
+        margin-top: 5rem !important;
     }
 }
 

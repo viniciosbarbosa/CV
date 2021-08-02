@@ -939,7 +939,6 @@ body {
 @media screen and (min-width: 1920px) {
   .title_prin {
     font-size: 1.5rem;
-    margin-top: 5rem;
   }
 }
 .title_prin i:first-child {
@@ -962,7 +961,7 @@ body {
 }
 @media screen and (min-width: 1920px) {
   #title1 {
-    margin-top: 5rem;
+    margin-top: 5rem !important;
   }
 }
 
