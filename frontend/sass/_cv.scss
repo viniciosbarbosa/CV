@@ -938,6 +938,7 @@ body{
     margin-bottom: 3%;
     @include device(mobile){
         width: 100%;
+        height: 150px;
     }
     @include device(table){
         max-width: 90%;
@@ -979,6 +980,10 @@ body{
 
 .imgPort{
     margin-bottom: 3%;
+    @include device(mobile){
+        padding: 0px;
+        margin: 0px;
+    }
 }
 
 .portall{
