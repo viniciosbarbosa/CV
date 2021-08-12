@@ -898,7 +898,7 @@ body{
         font-weight: bold;
         text-transform: capitalize;
         text-align: left;
-        word-break: initial;
+        word-break: break-all;
         @include device(full){
             font-size: 1.5rem
         }
