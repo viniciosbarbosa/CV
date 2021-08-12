@@ -1,0 +1,139 @@
+$cols:12;
+$gutter:0px;
+$full:1920px;
+$hd:1400px;
+$large:1366px;
+$table:770px;
+$mobile:560px;
+
+@mixin mac{
+    @media screen and (min-width:1270px) and (max-width:1290px) {
+       @content; 
+    }
+}
+
+@mixin mach{
+    @media screen and (min-height:580px)and (max-height:600px) {
+        @content; 
+     }
+}
+
+@mixin device($size) {
+    @if $size == full{
+        @media screen and (min-width: #{$full}) {
+            @content
+        }
+    }
+    @else if $size == hd{
+        @media screen and (min-width: #{$hd}) and (max-width: #{$full - 1}){
+            @content;
+        }
+    }
+    @else if $size == large {
+        @media screen and (min-width: #{$table}) and (max-width: #{$large}){
+            @content;
+        }
+    }@else if $size == table {
+        @media screen and (min-width: #{$mobile}) and (max-width: #{$table - 1}){
+            @content;
+        }
+    }@else if $size == mobile{
+        @media screen and (max-width: #{$mobile - 1}){
+            @content;
+        }
+    }
+}
+
+@function grid($col, $offset: false) {
+    $width: $col / $cols * 100 + "%";
+    $result: calc(#{$width} - #{$gutter});
+    @if $offset == offset {
+      $gutter: $gutter;
+      $result: calc(#{$width} + #{$gutter});
+    }
+    @return $result;
+}
+
+@for $i from 1 through $cols {
+    .grid-#{$i} {
+        width: grid($i);
+    }
+}
+
+@mixin grid-structure{
+    float: left;
+    min-height: 1px;
+    margin-left: 0px;
+    margin-right: 0px;
+    @include device(mobile){
+        width: 100%;
+        float: none;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
+[class^="grid-"]{
+    @include grid-structure;
+}
+
+@for $i from 1 through $cols {
+    .offset-#{$i}{
+        margin-left: grid($i , offset);
+        @extend %offset;
+    }
+}
+
+@include device(mobile){
+    %offset{
+        margin-left:0px
+    }
+}
+
+@mixin clearfix {
+    &::after,
+    &::before{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+@mixin container {
+    max-width: $large;
+    margin: 0px auto;
+    padding-left: 0px;
+    padding-righ: 0px;
+    position: relative;
+    @include device(table) {
+      max-width: $table;
+    }
+    @include device(mobile) {
+      max-width: $mobile;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    @include clearfix;
+  }
+
+  .container {
+      @include container;
+  }
+
+  @mixin row {
+      position: relative;
+      margin-right: 0px;
+      margin-left: 0px;
+
+      @include device(mobile){
+          margin-right: 0px;
+          margin-left: 0px;
+      }
+
+      @include clearfix;
+  }
+
+  .row{
+   @include row;
+  }
