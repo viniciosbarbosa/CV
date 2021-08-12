@@ -300,8 +300,8 @@ body {
 }
 
 .perfil {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(47%, #fff), color-stop(80%, #335384));
-  background: linear-gradient(180deg, #fff 47%, #335384 80%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(47%, #233653), color-stop(80%, #335384));
+  background: linear-gradient(180deg, #233653 47%, #335384 80%);
   border-top-left-radius: 45px;
   border-bottom-left-radius: 45px;
   padding: 30px;
@@ -1676,8 +1676,8 @@ body {
 
 @media screen and (max-width: 559px) {
   .mn-mobile {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(47%, #fff), color-stop(80%, #335384));
-    background: linear-gradient(180deg, #fff 47%, #335384 80%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(47%, #233653), color-stop(80%, #335384));
+    background: linear-gradient(180deg, #233653 47%, #335384 80%);
     display: initial;
     height: 100vh;
     -webkit-transform: translate3d(0px, 0, 0);
