@@ -111,6 +111,12 @@ $('#prd').click(function (e) {
     window.location.href = 'https://www.cod3r.com.br/certificates/nbzzqkqbnv';
 });
 
+
+$('#flex').click(function (e) { 
+    e.preventDefault();
+    window.location.href="https://www.origamid.com/certificate/b3ee1766/"
+});
+
 $('.portlogo').click(function (e) { 
     e.preventDefault();
     window.location.href = 'https://github.com/viniciosbarbosa/Logo';
@@ -150,6 +156,9 @@ $('.portcd').click(function (e) {
     e.preventDefault();
     window.location.href = 'https://github.com/viniciosbarbosa/App-CoronaVirus';
 });
+
+
+
 
 
 function activeDiv(e , id) {
