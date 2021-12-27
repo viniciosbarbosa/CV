@@ -343,7 +343,7 @@ body {
 .perfil .foto {
   position: relative;
   width: 180px;
-  margin: 0 auto 30px;
+  margin: 10px auto 20px;
   z-index: 1;
 }
 @media screen and (max-width: 559px) {
