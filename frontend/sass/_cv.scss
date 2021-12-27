@@ -52,7 +52,13 @@ body{
         border:3px solid $white;
         border-radius: 50%;
         max-width: 100%;
-        height: auto;      
+        height: auto; 
+        
+        @media screen and (max-width:380px){
+            height: 130px;
+            display: block;
+            margin: 0 auto;
+        }
     }
 }
 
@@ -77,8 +83,14 @@ body{
     padding: 0;
     margin: auto;
     margin-top: 10%;
+    @media screen and (max-width:380px){
+        margin-top:3%;
+    }
     li:first-child{
-        margin-left: calc(50% - 25%)
+        margin-left: calc(50% - 25%);
+        @media screen and (max-width:380px){
+            margin-left: calc(50% - 33%);
+        }
     }
     
     li{
@@ -114,7 +126,7 @@ body{
         height: 80vh
     }
     @include device(full){
-        height: 80vh
+        height: 85vh
     }
     @include device(table){
         padding: 30px 30px 30px 0px
@@ -275,6 +287,10 @@ body{
     @include device(full){
         font-size: 5.5rem;
     }
+
+    @media screen and (max-width:380px){
+        font-size: 3rem;
+    }
 }
 
 .profA{
@@ -298,6 +314,10 @@ body{
         display: initial;
         align-items: initial;
         margin-top: 50%;
+    }
+
+    @media screen and (max-width:380px){
+        margin-top: 30%;
     }
 }
 
@@ -415,6 +435,11 @@ body{
         height: 80vh !important;
     }
     
+    @media screen and (max-width:380px){
+        height: 101vh !important;
+    }
+
+
     @include device(mobile){
         margin-left: 0px;
         height: 100vh;
@@ -423,13 +448,14 @@ body{
     
     
     @include device(full){
-        height: 80vh
+        height: 85vh
     }
     
     @include device (hd){
         height: 80vh
     }
     
+
 }
 
 
@@ -634,6 +660,10 @@ body{
             font-size: 28px;
         }
     }
+}
+
+.title_prin:last-child{
+    padding-top: 0px;
 }
 
 #title1{
@@ -901,6 +931,10 @@ body{
         word-break: break-all;
         @include device(full){
             font-size: 1.5rem
+        }
+
+        @media screen and(max-width:380px){
+            word-break: normal;
         }
     }
     

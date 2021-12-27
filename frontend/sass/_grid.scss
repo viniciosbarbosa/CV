@@ -1,10 +1,11 @@
 $cols:12;
 $gutter:0px;
-$full:1920px;
+$full:1919px;
 $hd:1400px;
 $large:1366px;
 $table:770px;
 $mobile:560px;
+$mobileSmall:380px;
 
 @mixin mac{
     @media screen and (min-width:1270px) and (max-width:1290px) {

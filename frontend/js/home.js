@@ -117,6 +117,11 @@ $('#flex').click(function (e) {
     window.location.href="https://www.origamid.com/certificate/b3ee1766/"
 });
 
+$('#fiap').click(function (e) { 
+    e.preventDefault();
+    window.location.href = 'https://drive.google.com/file/d/1SrMpQ3atpkDN_VA6zAJDXisXWvDvd-wW/view';
+});
+
 $('.portlogo').click(function (e) { 
     e.preventDefault();
     window.location.href = 'https://github.com/viniciosbarbosa/Logo';
@@ -156,6 +161,13 @@ $('.portcd').click(function (e) {
     e.preventDefault();
     window.location.href = 'https://github.com/viniciosbarbosa/App-CoronaVirus';
 });
+
+$(".flexboxGit").click(function (e) { 
+    e.preventDefault();
+    window.location.href = 'https://github.com/viniciosbarbosa/FlexBlog';
+});
+
+
 
 
 
