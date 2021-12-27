@@ -38,6 +38,10 @@ body{
         margin-top: calc(50% - 30%);
         padding: 0% 10%;
     }
+
+    @media screen and(min-width:800px) and (max-width:800px){
+     margin-top: 15%;   
+    }
     
 }
 
@@ -139,6 +143,11 @@ body{
     @include device(large){
         padding: 10px 30px 10px 10px
     }
+
+    @media screen and(min-width:800px) and (max-width:900px){
+        padding: 10px 30px 10px 10px
+    }
+
     @include linear-gradient (180deg, $pink 47%, $yellow 80%);
     border-top-left-radius: 45px;
     border-bottom-left-radius: 45px;
@@ -173,8 +182,22 @@ body{
             border:3px solid $white;
             border-radius: 50%;
             max-width: 100%;
-            height: auto;        
+            height: auto;    
+            @media screen and(min-width:800px) and (max-width:900px){
+                display: block;
+                margin: 10px auto;
+                max-width: 85%;
+            }
+
+            @include device(full){
+                max-width: 85%;
+                display: block;
+                margin: 0 auto;
+            }
+            
         }
+
+        
     }
     
     .name , .prof{
@@ -273,6 +296,10 @@ body{
     
     @media screen and (min-width:1000px) and (max-width:1030px) {
         width: 85%;
+    }
+
+    @media screen and (min-width:800px) and (max-width:900px) {
+        width: 80%;
     }
 }
 
@@ -386,6 +413,9 @@ body{
     }
     @media screen and (min-width:1000px) and (max-width:1030px) {
         bottom: 180px;
+    }
+    @media screen and (min-width:800px) and (max-width:900px) {
+        bottom: 200px;
     }
     @include device(mobile){
         background: $fumaca;
