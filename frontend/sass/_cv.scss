@@ -39,7 +39,7 @@ body{
         padding: 0% 10%;
     }
 
-    @media screen and(min-width:800px) and (max-width:800px){
+    @media screen and(min-width:800px) and (max-width:950px){
      margin-top: 15%;   
     }
     
@@ -373,7 +373,7 @@ body{
     }
     
 }
-.prev-arrow
+.prev-arrow,
 .caixa-s ,.caixa-prev {
     list-style-type:none;
     padding: 0px;
@@ -538,6 +538,10 @@ body{
             left: 20%;
             top: 19px;
         }
+
+        @media screen and(min-width:800px) and (max-width:950px){
+            display: none;
+        }
     }
 }
 
@@ -630,6 +634,9 @@ body{
     }
     @include tipo-24(24);
     ::after{
+        @media screen and (min-width:800px) and(max-width:950px){
+            display: none;
+        }
         margin-top: 9px;
         @include points;
         @include device(table){
@@ -786,6 +793,9 @@ body{
     }
     &::after{
         top: 10px;
+        @media screen and (min-width:800px) and(max-width:950px){
+            display: none;
+        }
         @include points;
         @include device(mobile){
             display: none;
@@ -801,7 +811,7 @@ body{
             left:26% !important;
         }
         @include device(large){
-            left: 28%;
+            left: 37%;
         }
         @include device(hd){
             left: 23%;
@@ -826,6 +836,9 @@ body{
     &::after{
         top: 8px;
         @include points;
+        @media screen and (min-width:800px) and(max-width:950px){
+            display: none;
+        }
         @include device(table){
             left: 23%;
         }

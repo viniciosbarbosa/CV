@@ -210,7 +210,7 @@ body {
     padding: 0% 10%;
   }
 }
-@media screen and (min-width: 800px) and (max-width: 800px) {
+@media screen and (min-width: 800px) and (max-width: 950px) {
   .all {
     margin-top: 15%;
   }
@@ -601,14 +601,14 @@ body {
   }
 }
 
-.prev-arrow .caixa-s,
-.caixa-prev {
+.prev-arrow,
+.caixa-s, .caixa-prev {
   list-style-type: none;
   padding: 0px;
   border-radius: 20px;
 }
-.prev-arrow .caixa-s li a,
-.caixa-prev li a {
+.prev-arrow li a,
+.caixa-s li a, .caixa-prev li a {
   justify-content: center;
   display: flex;
   cursor: pointer;
@@ -619,9 +619,9 @@ body {
   margin: 0 auto;
   transition: 0.3s;
 }
-.prev-arrow .caixa-s li a:hover, .prev-arrow .caixa-s li afocus,
-.caixa-prev li a:hover,
-.caixa-prev li afocus {
+.prev-arrow li a:hover, .prev-arrow li afocus,
+.caixa-s li a:hover,
+.caixa-s li afocus, .caixa-prev li a:hover, .caixa-prev li afocus {
   color: #335384;
 }
 
@@ -811,6 +811,11 @@ body {
     top: 19px;
   }
 }
+@media screen and (min-width: 800px) and (max-width: 950px) {
+  .titleS::after {
+    display: none;
+  }
+}
 
 .txtDec {
   font-family: "Poppins";
@@ -932,6 +937,11 @@ body {
   background-image: -ms-repeating-radial-gradient(center center, #335384, #335384 1px, transparent 0px, transparent 100%);
   background-size: 6px 6px;
   z-index: 0;
+}
+@media screen and (min-width: 800px) and (max-width: 950px) {
+  .titleS2 ::after {
+    display: none;
+  }
 }
 @media screen and (min-width: 1919px) {
   .titleS2 ::after {
@@ -1163,6 +1173,11 @@ body {
   background-size: 6px 6px;
   z-index: 0;
 }
+@media screen and (min-width: 800px) and (max-width: 950px) {
+  .titleR2::after {
+    display: none;
+  }
+}
 @media screen and (min-width: 1919px) {
   .titleR2::after {
     height: 50px;
@@ -1191,7 +1206,7 @@ body {
 }
 @media screen and (min-width: 770px) and (max-width: 1366px) {
   .titleR2::after {
-    left: 28%;
+    left: 37%;
   }
 }
 @media screen and (min-width: 1400px) and (max-width: 1918px) {
@@ -1238,6 +1253,11 @@ body {
   .titleR3::after {
     height: 50px;
     width: 100px;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 950px) {
+  .titleR3::after {
+    display: none;
   }
 }
 @media screen and (min-width: 560px) and (max-width: 769px) {
