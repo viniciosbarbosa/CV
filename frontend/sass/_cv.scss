@@ -118,6 +118,10 @@ body{
     }
 }
 
+.imgFiap{
+    height: 6.2rem;
+}
+
 .perfil{
     @include device(mobile){
         display: none;

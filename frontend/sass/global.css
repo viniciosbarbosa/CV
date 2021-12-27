@@ -293,6 +293,10 @@ body {
   width: 30px;
 }
 
+.imgFiap {
+  height: 6.2rem;
+}
+
 .perfil {
   background: linear-gradient(180deg, #233653 47%, #335384 80%);
   border-top-left-radius: 45px;
