@@ -719,7 +719,7 @@ body {
 @media screen and (max-width: 559px) {
   .js [data-target].active {
     margin-left: 0px;
-    height: 100vh;
+    height: 101vh;
     overflow-x: hidden;
   }
 }
