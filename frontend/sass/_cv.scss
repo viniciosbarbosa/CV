@@ -339,14 +339,14 @@ body{
     right: 10px;
     border-radius: 20px;
     @media screen and (min-width:1360px) and(max-width:1370px){
-        top: 8.5;
+        top: 10%;
     }
     @include device(mobile){
         display: none;
     }
     
 }
-
+.prev-arrow
 .caixa-s ,.caixa-prev {
     list-style-type:none;
     padding: 0px;

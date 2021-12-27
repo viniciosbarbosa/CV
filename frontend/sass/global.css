@@ -563,7 +563,7 @@ body {
 }
 @media screen and (min-width: 1360px) and (max-width: 1370px) {
   .seletores {
-    top: 8.5;
+    top: 10%;
   }
 }
 @media screen and (max-width: 559px) {
