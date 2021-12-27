@@ -31,7 +31,7 @@ $mobileSmall:380px;
         }
     }
     @else if $size == large {
-        @media screen and (min-width: #{$table}) and (max-width: #{$large - 1}){
+        @media screen and (min-width: #{$table}) and (max-width: #{$large}){
             @content;
         }
     }@else if $size == table {
