@@ -210,6 +210,11 @@ body {
     padding: 0% 10%;
   }
 }
+@media screen and (min-width: 800px) and (max-width: 800px) {
+  .all {
+    margin-top: 15%;
+  }
+}
 
 .fotoM {
   position: relative;
@@ -330,6 +335,11 @@ body {
     padding: 10px 30px 10px 10px;
   }
 }
+@media screen and (min-width: 800px) and (max-width: 900px) {
+  .perfil {
+    padding: 10px 30px 10px 10px;
+  }
+}
 .perfil .foto {
   position: relative;
   width: 180px;
@@ -363,6 +373,20 @@ body {
   border-radius: 50%;
   max-width: 100%;
   height: auto;
+}
+@media screen and (min-width: 800px) and (max-width: 900px) {
+  .perfil .foto img {
+    display: block;
+    margin: 10px auto;
+    max-width: 85%;
+  }
+}
+@media screen and (min-width: 1919px) {
+  .perfil .foto img {
+    max-width: 85%;
+    display: block;
+    margin: 0 auto;
+  }
 }
 .perfil .name, .perfil .prof {
   display: block;
@@ -457,6 +481,11 @@ body {
 @media screen and (min-width: 1000px) and (max-width: 1030px) {
   .btnDown {
     width: 85%;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 900px) {
+  .btnDown {
+    width: 80%;
   }
 }
 
@@ -572,12 +601,14 @@ body {
   }
 }
 
-.caixa-s, .caixa-prev {
+.prev-arrow .caixa-s,
+.caixa-prev {
   list-style-type: none;
   padding: 0px;
   border-radius: 20px;
 }
-.caixa-s li a, .caixa-prev li a {
+.prev-arrow .caixa-s li a,
+.caixa-prev li a {
   justify-content: center;
   display: flex;
   cursor: pointer;
@@ -588,7 +619,9 @@ body {
   margin: 0 auto;
   transition: 0.3s;
 }
-.caixa-s li a:hover, .caixa-s li afocus, .caixa-prev li a:hover, .caixa-prev li afocus {
+.prev-arrow .caixa-s li a:hover, .prev-arrow .caixa-s li afocus,
+.caixa-prev li a:hover,
+.caixa-prev li afocus {
   color: #335384;
 }
 
@@ -612,6 +645,11 @@ body {
 @media screen and (min-width: 1000px) and (max-width: 1030px) {
   .prev-arrow {
     bottom: 180px;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 900px) {
+  .prev-arrow {
+    bottom: 200px;
   }
 }
 @media screen and (max-width: 559px) {
