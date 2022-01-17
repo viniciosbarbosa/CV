@@ -1,5 +1,5 @@
 Template <br>
-Desenvolvido Usando SASS | JSquery
+Desenvolvido Usando SASS | Jquery
 
 Link : https://sharp-hawking-f9d69f.netlify.app/
 <br>
